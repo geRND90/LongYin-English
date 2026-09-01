@@ -1,0 +1,33 @@
+TEST35 canonical sect review
+
+Chinese	Canonical English	Decision
+长乐帮	Changle Gang	LOCK
+唐门	Tang Sect	CHANGED TEST35
+药王谷	Yaowang Valley	KEEP
+丐帮	Beggars Sect	LOCK
+飞龙门	Flying Dragon Sect	LOCK
+茅山派	Maoshan Sect	CHANGED TEST35
+铸剑山庄	Sword Forging Villa	LOCK
+五毒教	Five Poisons Sect	LOCK
+阎罗殿	Yama Palace	LOCK
+大隐阁	Dayin Pavilion	KEEP
+少林寺	Shaolin Temple	LOCK
+武当派	Wudang Sect	LOCK
+霸刀门	Badao Sect	KEEP / optional Tyrant Blade Sect
+蓬莱派	Penglai Sect	LOCK
+峨眉派	Emei Sect	LOCK
+崆峒派	Kongtong Sect	LOCK
+神机门	Shenji Sect	KEEP / optional Divine Mechanism Sect
+霹雳堂	Thunderclap Hall	LOCK
+金刚密宗	Vajra Esoteric Sect	LOCK
+天山派	Tianshan Sect	LOCK
+聚义门	Alliance of Justice	KEEP / stylistic review candidate
+黄河帮	Yellow River Gang	LOCK
+八卦门	Bagua Sect	CHANGED TEST35
+海沙帮	Haisha Gang	KEEP / optional Sea Sand Gang
+铁掌帮	Iron Palm Gang	LOCK
+仙霞派	Xianxia Sect	LOCK
+巨鲸帮	Giant Whale Gang	LOCK
+金龙帮	Golden Dragon Gang	LOCK
+青城派	Qingcheng Sect	LOCK
+伏牛派	Funiu Sect	LOCK

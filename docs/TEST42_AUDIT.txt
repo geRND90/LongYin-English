@@ -1,0 +1,72 @@
+LongYin English Core v0.1.8-test42
+TEST42 latest 831 unresolved canonical wave
+Source log: Latest(20260901-022816).log
+
+STABILITY BASE
+- Built directly on TEST41 / TEST38-safe architecture.
+- ComplexData quest patches remain excluded.
+- TheBookOfLong package still contains only Data/PlotData.csv.
+- PlotData.csv was not modified in TEST42.
+- Accumulated HUD/battle histories remain line-by-line.
+- Dynamic regex timeout and long-string safeguards remain enabled.
+
+LATEST LOG
+- Unresolved captured: 831 / 2000.
+- CJK-containing unresolved records: 438.
+- PerfSlow samples: 80.
+- Maximum PerfSlow in this session: 127.9 ms.
+- Median PerfSlow: 66.4 ms.
+
+TEST42 COVERAGE
+- Fixed procedural NPC romanization after rich-text rank labels with whitespace.
+- Fixed surname + Senior/Junior Brother/Sister parsing.
+- Added context-safe research abbreviations: 口 -> Eloquence, 力 -> Strength.
+- Added 61+ latest procedural NPC canonical display names and normalized compound surnames
+  (Shangguan, Dongmen, Beiming, Beitang, Nangong, Wanyan, Zuoqiu, Ximen).
+- Added Bandit A/B/C and Bandit Leader canonical battle names.
+- Added Karmic Wildfire, Mining Materials, Unnamed Cellar, Vase, Journey Down the Mountain,
+  Taiyue Grand Assembly and Rating.
+- Expanded Plot/Record processing so non-speaker narrative blocks are translated too.
+- Added context-scoped cleanup for generated logs, loyalty notifications, crafting, retirement,
+  expert-stele events, prosperity/celebration events and mixed conjunctions.
+- Added context-scoped cleanup for TheBook/meeting, SimpleDetail, SurePanel, WorldEvent titles,
+  cloth labels, mail and Plot/Debate dialogue.
+- Added canonical poetry translations and large narrative blocks from this session.
+
+CANONICAL LOCKS PRESERVED
+- 唐门 -> Tang Sect
+- 茅山派 -> Maoshan Sect
+- 八卦门 -> Bagua Sect
+- 门派 -> Sect
+- 上乘武功 -> Superior Martial Arts
+- 秘传武功 -> Secret Martial Arts
+- 比武大赛 -> Martial Arts Tournament
+- 门派大比 -> Sect Tournament
+- 刺客头目 -> Assassin Leader
+- 庖丁解牛刀 -> Pao Ding Ox-Carving Blade
+- 马贼据点 -> Horse Bandit Stronghold
+- 私塾 -> Private School
+- 静室 -> Quiet Room
+- 石坊 -> Quarry
+- 文逸真人 -> Daoist Wenyi
+- Percentage 连击 display remains normalized to Combo Rate.
+
+FINAL DATA AUDIT
+- canonical.tsv: 20765 records
+- tokens.tsv: 11735 records
+- fallback_exact.tsv: 15347 records
+- regex.tsv: 5151 records
+- aliases.tsv: 803 records
+- npc_names.tsv: 324 records
+- npc_surnames.tsv: 435 records
+- npc_given_chars.tsv: 1018 records
+- building_names.tsv: 76 records
+- Duplicate keys: 0 in canonical/tokens/fallback/aliases/NPC/building dictionaries.
+- Duplicate regex pattern+trigger groups: 0.
+- Fallback keys shadowed by canonical: 0.
+- Self-referential aliases: 0.
+
+UNCHANGED KNOWN ITEMS
+- PlotData source still relies on TheBookOfLong's four blank placeholders for IDs 1677-1680.
+- XUnity missing-Core and PotentialCapUnlock/TheResourceOfLong Harmony startup errors are unrelated
+  to LongYinEnglish and were not changed here.

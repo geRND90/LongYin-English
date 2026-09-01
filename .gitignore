@@ -1,0 +1,26 @@
+# Build output
+LongYinEnglish/bin/
+LongYinEnglish/obj/
+READY/
+_buildtools/
+
+# Local dependency assemblies
+Refs/
+
+# Compiled packages and binaries
+Mods/LongYinEnglish.dll
+*.zip
+
+# Logs and generated dumps
+Latest*.log
+DataDump/
+
+# Editor and OS files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+.DS_Store
+

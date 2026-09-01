@@ -1,0 +1,862 @@
+# LongYin English canonical data - generated from the complete user translation corpus
+Five Venoms Sect	Five Poisons Sect
+Juxian Town	Zhuxian Town
+Beggars' Sect	Beggars Sect
+Beggars’Sect	Beggars Sect
+Beggars'Sect	Beggars Sect
+Five Venom's Sect	Five Poisons Sect
+Five Venon's Sect	Five Poisons Sect
+The Five Venoms Sect	Five Poisons Sect
+Five Venoms	Five Poisons Sect
+
+# TEST11 display normalization
+Festival Lanterns	Lantern Festival
+The Debate Competition	Debate Competition
+The Martial Arts Competition	Martial Arts Tournament
+CommonHook	Common Hook
+CommonAccessory	Common Accessory
+SuperiorAccessory	Superior Accessory
+InferiorAccessory	Inferior Accessory
+CommonFootwear	Common Footwear
+SuperiorFootwear	Superior Footwear
+InferiorFootwear	Inferior Footwear
+CommonArmor	Common Armor
+SuperiorArmor	Superior Armor
+InferiorArmor	Inferior Armor
+CommonWeapon	Common Weapon
+SuperiorWeapon	Superior Weapon
+InferiorWeapon	Inferior Weapon
+CommonHelmet	Common Helmet
+SuperiorHelmet	Superior Helmet
+InferiorHelmet	Inferior Helmet
+SuperiorJewels	Superior Jewels
+CommonJewels	Common Jewels
+Prime DiscipleTaoist	Prime Disciple Taoist
+A reward of120	A reward of 120
+
+# TEST12 spacing / display normalization
+CommonHorse	Common Horse
+SuperiorHorse	Superior Horse
+InferiorHorse	Inferior Horse
+PerfectHorse	Perfect Horse
+FineHorse	Fine Horse
+PeerlessHorse	Peerless Horse
+FineFootwear	Fine Footwear
+PerfectFootwear	Perfect Footwear
+PeerlessFootwear	Peerless Footwear
+FineArmor	Fine Armor
+PerfectArmor	Perfect Armor
+PeerlessArmor	Peerless Armor
+FineHelmet	Fine Helmet
+PerfectHelmet	Perfect Helmet
+PeerlessHelmet	Peerless Helmet
+FineAccessory	Fine Accessory
+PerfectAccessory	Perfect Accessory
+PeerlessAccessory	Peerless Accessory
+FineWeapon	Fine Weapon
+PerfectWeapon	Perfect Weapon
+PeerlessWeapon	Peerless Weapon
+SuperiorWine Vessels	Superior Wine Vessels
+JingchengPorcelain	Jingcheng Porcelain
+Shenji SectWarehouse	Shenji Sect Warehouse
+Golden Dragon GangTraining	Golden Dragon Gang Training
+Auction Fairhas	Auction Fair has
+auction item将	auction item
+this sessionAuction	this session Auction
+
+# TEST13 display normalization
+SuperiorFist	Superior Fist
+AdvancedFist	Advanced Fist
+AdvancedArchery	Advanced Archery
+AdvancedSword	Advanced Sword
+AdvancedBlade	Advanced Blade
+AdvancedPolearm	Advanced Polearm
+AdvancedQimen	Advanced Qimen
+SuperiorSword	Superior Sword
+SuperiorBlade	Superior Blade
+SuperiorPolearm	Superior Polearm
+SuperiorQimen	Superior Qimen
+SuperiorArchery	Superior Archery
+CommonHeadgear	Common Headgear
+SuperiorHeadgear	Superior Headgear
+InferiorHeadgear	Inferior Headgear
+CommonSaddle Gear	Common Saddle Gear
+High-quality saddles	High-quality Saddle
+High-quality Saddle	Quality Saddle
+Ordinary Heavy Armor	Heavy Armor
+Ordinary Heavy Boots	Heavy Boots
+Ordinary Heavy Helm	Heavy Helm
+Ordinary short sword	Short Sword
+Ordinary long spear	Long Spear
+Ordinary buckle	Buckle
+Ordinary straw hats	Straw Hat
+Rare book	Rare Manual
+AppearanceArchery	Basic Archery
+Speedx	Speed x
+Auction Fairends	Auction Fair ends
+Auction Fairis	Auction Fair is
+auction itemwill	auction item will
+auction item是	auction item is
+participants踊	participants 
+Great Hero也	heroes 
+Jingcheng城	Jingcheng
+MineMine	Mine for
+FactionSect Leader	Sect Leader
+Official Position，	Official Position,
+Reputation GainSpeed	Reputation Gain Speed
+
+# TEST15 English normalization / canonical spacing
+PinnacleFist	Pinnacle Fist
+PinnacleQimen	Pinnacle Qimen
+PinnacleSword	Pinnacle Sword
+PinnacleBlade	Pinnacle Blade
+PinnaclePolearm	Pinnacle Polearm
+PinnacleArchery	Pinnacle Archery
+Secret ArtFist	Secret Fist
+Secret ArtSword	Secret Sword
+Secret ArtBlade	Secret Blade
+Secret ArtPolearm	Secret Polearm
+Secret ArtQimen	Secret Qimen
+Secret ArtArchery	Secret Archery
+AppearanceFist	Basic Fist
+AppearanceSword	Basic Sword
+AppearanceBlade	Basic Blade
+AppearancePolearm	Basic Polearm
+AppearanceQimen	Basic Qimen
+Martial ArtsExperience	Martial Arts Experience
+Martial ArtsGrade	Martial Art Grade
+Martial ArtsLevel	Martial Art Level
+EquipmentValue	Equipment Value
+Martial ArtsValue	Martial Art Value
+AgilityMovement Art	Agility + Movement Art
+AppearanceDisplacement	Movement Animation Distance
+Ultimate Martial ArtsExperience Gain	Ultimate Martial Arts Experience Gain
+Peerless Martial ArtsExperience Gain	Peerless Martial Arts Experience Gain
+Secret Martial ArtsExperience Gain	Secret Martial Arts Experience Gain
+Pinnacle Martial ArtsExperience Gain	Pinnacle Martial Arts Experience Gain
+Xianxia Sect派	Xianxia Sect
+Research Efficiency+	Research Efficiency +
+Disciple Merit+	Disciple Merit +
+Region Cap+	Region Cap +
+Disciple Cap+	Disciple Cap +
+Storage Capacity+	Storage Capacity +
+Resource Node Output+	Resource Node Output +
+Fortification Durability+	Fortification Durability +
+Recovery Efficiency+	Recovery Efficiency +
+Combat Experience+	Combat Experience +
+Theory Experience+	Theory Experience +
+Herbs+	Herbs +
+Silver+	Silver +
+Food+	Food +
+Ore+	Ore +
+Wood+	Wood +
+Prestige+	Prestige +
+Loyal  	Loyalty  
+Loyal 5	Loyalty 5
+正 in  Doing nothing	Currently idle
+正 in Doing nothing	Currently idle
+
+# TEST15 second display-normalization pass
+Loyal 	Loyalty 
+young hero当前的	Your current 
+Jin young hero	Young Hero Jin
+I wonder 施主	Benefactor, would you 
+正 in 	is 
+ in 此Training	 training here
+ in 路旁	 by the roadside
+实 in 珍贵	is truly precious
+成竹 in 胸	fully prepared
+输 in 心慈手软	is held back by a soft heart
+你们 in 为人处世上	When dealing with people and the world, you 
+Battle时长	Battle Duration
+击Defeat敌人	Enemies Defeated
+Deal Damage	Damage Dealt
+承Damage Taken害	Damage Taken
+Improve至	improved to 
+Improve至10级	improved to Level 10
+Improve至3级	improved to Level 3
+Senior UncleDirections	Senior Uncle’s guidance
+Xianxia Sect开始研究	Xianxia Sect began researching 
+Farm几天	Farm for how many days
+Sabotage几天	Sabotage for how many days
+Maintaining law and order	maintaining order
+Weaponarmaments	armaments
+Weapon armaments	armaments
+Faction来	sect to 
+LeaveXianxia Sect	left Xianxia Sect
+四处Wandering	wandered the world
+大Disciples	eldest disciple
+几位Disciples	disciples
+JianghuExperience	Jianghu Experience
+Shadowless Chaos SwordNimble	Shadowless Chaos Sword is nimble
+QimenPinnacle	Pinnacle Qimen
+SwordPinnacle	Pinnacle Sword
+
+# TEST15 UI/system display aliases
+Hangzhouis	Hangzhou is
+a rareMartial Arts	a rare Martial Arts
+youthExceptional	youth with Exceptional
+Alliance of Justicethe	Alliance of Justice, the
+WarriorServant Outfit	Warrior Servant Outfit
+Outfit change cooldown 	Outfit change cooldown: 
+Xianxia SectScripture Pavilion	Xianxia Sect Scripture Pavilion
+improved to 9级	improved to Level 9
+Sword Potential+	Sword Potential +
+Resource Cost:ManufacturingGoalEquipment	Resource Cost: Materials for the target Equipment
+BuildingLevel	Building Level
+StaminaRegeneration	Stamina Regeneration
+Combo/Dodge	Combo / Dodge
+Combo/Accuracy	Combo / Accuracy
+Faction3.	Faction 3.
+Others3.	Others 3.
+World3.	World 3.
+RumorJianghu	Rumor: Jianghu
+Rumor神机	Rumor: Shenji Sect 
+Rumor铸剑	Rumor: Sword Forging Villa 
+
+# TEST15 canonical terminology normalization
+Goodwill Gain	Affection Gain
+Favor Gain	Affection Gain
+Initial Favor	Initial Affection
+favor rating	Affection
+Clan Tournament	Sect Tournament
+Faction Banquet	Sect Banquet
+Faction Silver	Sect Silver
+Faction Research	Sect Research
+faction rank	sect rank
+Martial skills	Martial Arts
+Martial skill	Martial Art
+
+# TEST16 canonical normalization - ranks, sect terminology, spacing
+Faction Main Hall	Sect Main Hall
+FactionMain Hall	Sect Main Hall
+Faction Quests	Sect Quests
+Faction Quest	Sect Quest
+Faction Championships	Sect Tournament
+Faction Exhibition Hall	Sect Exhibition Hall
+FactionSilver	Sect Silver
+FactionPrestige	Sect Prestige
+UpgradeFactionMain Hall	Upgrade Sect Main Hall
+PromotionDisciples	promote disciples
+Recruit或PromotionDisciples	recruit or promote disciples
+DisciplesLoyal	Disciple Loyalty
+Disciples月俸	disciple monthly salary
+PeerlessArchery	Peerless Archery
+PeerlessBlade	Peerless Blade
+PeerlessSword	Peerless Sword
+PeerlessFist	Peerless Fist
+PeerlessQimen	Peerless Qimen
+PeerlessPolearm	Peerless Polearm
+Ancestral HallRitual	Ancestral Hall Ritual
+Ritualhow many days	Ritual for how many days
+Great Hero，	Great Hero, 
+please 您	please 
+I amDayin Pavilion	I am from Dayin Pavilion
+Nice to meet you，It's an honor.	Nice to meet you. It is an honor.
+Consume5Foot Stance/5Stamina	consumes 5 Foot Stance / 5 Stamina
+Practice Martial ArtsPractice Martial ArtsPractice Martial Arts	practice Martial Arts
+Practice Martial ArtsPractice Martial Arts	practice Martial Arts
+Sect Leader福如东海	Sect Leader, may your fortune be as vast as the Eastern Sea
+Xianxia<color=#FD1430>Master</color>	Xianxia Sect <color=#FD1430>Sect Leader</color>
+Grand Concealer<color=#FD1430>Master</color>	Dayin Pavilion <color=#FD1430>Sect Leader</color>
+Shaolin<color=#FD1430>Master</color>	Shaolin Temple <color=#FD1430>Sect Leader</color>
+Wudang<color=#FD1430>Master</color>	Wudang Sect <color=#FD1430>Sect Leader</color>
+Purchase了	purchased 
+WarehousePurchase	 Warehouse purchased 
+Recently, Large-scale construction projects	 recently began major construction
+Repair & Upgrade	upgrade 
+completed research [	completed research on [
+Main Hall和Dormitory	Main Hall and Dormitory
+occupying更多区域	occupying more regions
+
+# TEST16 additional spacing cleanup
+Xianxia SectSect Tournament	Xianxia Sect Tournament
+Zhu JiangSect Leader	Zhu Jiang, Sect Leader
+Jiao Yingrests	Jiao Ying rests
+Jing Xianjirests	Jing Xianji rests
+BeiMing Wanyuerests	BeiMing Wanyue rests
+Xiao Xie，	Xiao Xie, 
+Niu Xin，	Niu Xin, 
+Prime Disciple</color> Xiao Xie，	Prime Disciple</color> Xiao Xie,
+
+# TEST17 mixed-text canonical cleanup
+Exploration度	Exploration
+Great Hero饶命Great Hero饶命！小的再也不敢了！	Great Hero, mercy! I won't do it again!
+充分Rest	Full Rest
+稍作Rest	Short Rest
+ in 农户中充分Rest	 took a full rest at a farmhouse
+Treasure appraisal	Treasure Appraisal
+Preaching and teaching	Teaching & Debate
+MediocreOrdinary	unremarkable
+seems to 有几件古董掩埋其中	several antiques seem to be buried among the remains
+这堆Ruins骨骸看似unremarkable，却several antiques seem to be buried among the remains。	These ruins look unremarkable, but several antiques seem to be buried among the remains.
+只可惜眼下时间和精力有限，就选择其中一件进行Excavation好了。	With limited time and energy, I'll excavate just one of them.
+进行Excavation将消耗	Excavation costs 
+点Endurance	 Endurance
+但如果失Defeat	But if you fail
+Great Hero风尘仆仆	Great Hero, worn out from travel
+附近，目前处 in 	 nearby and is currently under 
+掌控之下	control
+Faction守卫	sect guards
+Faction Treasury	Sect Treasury
+Branch Sect Sect	Branch
+进行Breath Regulation	uses Breath Regulation
+触发了宝箱(随机Obtain Item)	triggered a Treasure Chest (random item)
+WeaponPoisoning	Weapon Poisoning
+FootwearPoisoning	Footwear Poisoning
+Footwear Poisoning  	Footwear Poisoning 
+Level 1别Martial Arts	Martial Arts of each tier
+train in 数	training count
+Self被施加负面状态	negative statuses applied to Self
+Improve defense战时	During defensive battles, improve 
+自动constructing	Auto Construction
+进行constructing	start construction
+constructing/UpgradeBuilding	construct/upgrade Buildings
+Treasure辨别能力	Treasure appraisal ability
+New Jianghu Rumor: <color=#FD1430>仙木灵果</color>	New Jianghu Rumor: <color=#FD1430>Immortal Wood Spirit Fruit</color>
+
+# TEST17 current-session hybrid plot cleanup
+Purchase库存	Purchase Stock
+<size=17>珍稀Ingredient</size>	<size=17>Rare Ingredient</size>
+Level零	Level 0
+Current Tavern: Level零	Current Tavern: Level 0
+can attract nearby Reputation相近的martial artists to gather	can attract nearby martial artists of similar Reputation to gather
+举办Banquetcan attract nearby Reputation相近的martial artists to gather	Holding a Banquet can attract nearby martial artists of similar Reputation to gather
+举办Banquetcan attract nearby Reputation相近的武林人士前来参与，一道把酒言欢，增进Relations	Holding a Banquet can attract nearby martial artists of similar Reputation to gather, drink together, and improve Relations
+young hero行走Jianghu若遇到什么不便之处	if you encounter trouble while traveling the Jianghu
+the shopkeeper can introduce you	the innkeeper can introduce you
+Spend 十日时间	spend 10 days
+Spend 十日	spend 10 days
+这Kongtong Sect与我Xianxia Sect的Relations	Kongtong Sect Relations with Xianxia Sect
+库存Equipment	Equipment stock
+in 这些城墙工事上动些手脚	sabotage these fortifications
+哼哼，只需	Heh, it only takes 
+可使该地Defense	Area Defense
+可使该地Population	Area Population
+
+# TEST18 hybrid-English normalization
+击DefeatEnemy	Enemies Defeated
+DefeatEnemy	Enemies Defeated
+Breakthrough效率	Breakthrough Efficiency
+Specialties: Sword法	Specialties: Sword
+Sword法	Sword
+难度难度Difficulty	Difficulty
+Quest文本	Quest
+Quest完成的很漂亮	Quest completed successfully
+Farm中...	Farming...
+Street Performance3 days	3 days of Street Performance
+Spend 10 days时间	Spend 10 days
+Spend 5 days时间	Spend 5 days
+ in Jianghu中	 in the Jianghu
+Jianghu世事	Affairs of the Jianghu
+ is 武林中人	 is a martial artist
+ in this place	 here
+this place的	this area's 
+此地周边	the surrounding area
+how many days？	how many days?
+Damage Taken害	Damage Taken
+所Damage Taken害	Damage Taken
+Master大寿	Sect Leader's Birthday
+
+# TEST19 talent diagnostics + canonical plot/UI wave
+Increase 队友	Increases teammates’ 
+BattleExperience	 Battle Experience
+Experience0/	Experience 0/
+领悟Talents：	 learned Talent: 
+领悟Talents:	 learned Talent: 
+领悟Nimble中...	Learning Nimble...
+Save错误	Save Error
+的Ruins之中	’s Ruins, 
+Wandering四海	wandering the Jianghu
+世外高人	Reclusive Expert
+僧人-dressed	monk-robed
+ in Seeking Alms	 seeking alms
+ in 要饭	 begging
+这Practice Martial Arts之事亦不能落下	I cannot neglect my Martial Arts training
+便是 in 自己家中	Even at home
+Practice Martial Arts之时	while practicing Martial Arts
+World Situation：	World Situation:
+全局Notoriety修正	Global Notoriety Modifier 
+Faction间 可以攻击资源	Sects can attack Resource Points
+Faction间 不可攻击资源	Sects cannot attack Resource Points
+Faction间 可以攻击城镇	Sects can attack Cities
+Faction间 不可攻击城镇	Sects cannot attack Cities
+Faction间 可以攻击总舵	Sects can attack Sect Headquarters
+Faction间 不可攻击总舵	Sects cannot attack Sect Headquarters
+The sect cannot attack the capital/headquarters.	Sects cannot attack Sect Headquarters
+Breakthrough耗时	Breakthrough Time
+Breakthrough伤势	Breakthrough Injury
+每Martial Arts of each tier都有最佳training count	Each Martial Arts tier has an optimal number of training sessions
+After exceeding this count，Experience Gain将逐次Reduce	After exceeding this count, Experience Gain decreases each time
+
+# TEST21 normalization aliases
+Rumor: : : : : :	Rumor:
+Rumor: : : : :	Rumor:
+Rumor: : : :	Rumor:
+Rumor: : :	Rumor:
+Rumor: :	Rumor:
+FineCalligraphy Copybooks	Fine Calligraphy Copybook
+PerfectFine Wine	Perfect Fine Wine
+PeerlessFine Wine	Peerless Fine Wine
+PerfectDelicacy	Perfect Delicacy
+itemauction item	auction item
+Recently, began major construction	recently began major construction
+began major construction，开始	began major construction and started to 
+began major construction，began	began major construction and began to 
+Increase 至Level	increased to Level
+Experience纪录	Experience record
+The robber Ding	Bandit D
+The robber C	Bandit C
+The robber B	Bandit B
+The robber A	Bandit A
+
+# TEST22 post-translation normalization; dated logs use simple past
+recently began major construction and started to renovate and upgrade	began major construction to renovate and upgrade 
+recently began major construction and began to  	began major construction to build 
+recently began major construction and began to 	began major construction to build 
+Palacerecently	Palace recently
+Valleyrecently	Valley recently
+Townrecently	Town recently
+Villagerecently	Village recently
+Sectattacked	Sect attacked 
+Gangattacked	Gang attacked 
+Hallattacked	Hall attacked 
+Templeattacked	Temple attacked 
+Palaceattacked	Palace attacked 
+Pavilionattacked	Pavilion attacked 
+Villaattacked	Villa attacked 
+Valleyattacked	Valley attacked 
+Townattacked	Town attacked 
+Villageattacked	Village attacked 
+Sectcompleted research	Sect completed research
+Sectbegan researching	Sect began researching
+CommissionQuest	Commission Quest
+QuestGoal	Quest Objective
+Quest失Defeat	Quest Failed
+Skills影响	Affected by Skills
+Confusion2 turns	Confusion 2 turns
+Berserk(Permanent)	Berserk (Permanent)
+Minehow many days	Mine — how many days
+Farmlandhow many days	Farmland — how many days
+Silver银子	Silver
+taels银子	taels of Silver
+Tavern内	Tavern
+Town内	Town
+Village内	Village
+Township内	Township
+Sect内	Sect
+Gang内	Gang
+Hall内	Hall
+Temple内	Temple
+Palace内	Palace
+Pavilion内	Pavilion
+Villa内	Villa
+Valley内	Valley
+constructGuest Room	Guest Room
+constructFarmland	Farmland
+constructMine	Mine
+constructForest	Forest
+constructNotice Board	Notice Board
+constructInfirmary	Infirmary
+constructHerb Garden	Herb Garden
+SectGuest Room	Sect Guest Room
+SectSeclusion Chamber	Sect Seclusion Chamber
+SectStall Vendor	Sect Stall Vendor
+SectHerb Garden	Sect Herb Garden
+GangGuest Room	Gang Guest Room
+GangMill	Gang Mill
+HallGuest Room	Hall Guest Room
+HallMill	Hall Mill
+TempleGuest Room	Temple Guest Room
+TempleMill	Temple Mill
+PalaceGuest Room	Palace Guest Room
+PalaceMill	Palace Mill
+PavilionGuest Room	Pavilion Guest Room
+PavilionSchool	Pavilion School
+VillaGuest Room	Villa Guest Room
+VillaMill	Villa Mill
+ValleyGuest Room	Valley Guest Room
+ValleyMill	Valley Mill
+VillageTavern	Village Tavern
+TownTavern	Town Tavern
+TownshipTavern	Township Tavern
+GangMine	Gang Mine
+SectMine	Sect Mine
+
+# TEST23 - hybrid cleanup / canonical spacing
+Great Sect Scion	prestigious sect
+Prime Disciple Taoist Robe道	Prime Disciple Taoist Robe
+Increase teammatesSword Battle Experience	Increases teammates' Sword Battle Experience
+Increase teammatesFist Battle Experience	Increases teammates' Fist Battle Experience
+Increase teammatesBlade Battle Experience	Increases teammates' Blade Battle Experience
+Increase teammatesPolearm Battle Experience	Increases teammates' Polearm Battle Experience
+Increase teammatesQimen Battle Experience	Increases teammates' Qimen Battle Experience
+Increase teammatesArchery Battle Experience	Increases teammates' Archery Battle Experience
+Sectrecently	Sect recently
+Pavilionrecently	Pavilion recently
+Hallrecently	Hall recently
+Templerecently	Temple recently
+Gangrecently	Gang recently
+Villarecently	Villa recently
+upgradeWudang	upgrade Wudang
+upgradeXianxia	upgrade Xianxia
+upgradeBadao	upgrade Badao
+upgradeShaolin	upgrade Shaolin
+upgradePenglai	upgrade Penglai
+upgradeMiaoshan	upgrade Miaoshan
+upgradeTianshan	upgrade Tianshan
+upgradeKongtong	upgrade Kongtong
+upgradeDayin	upgrade Dayin
+upgradeShenji	upgrade Shenji
+upgradeThunderclap	upgrade Thunderclap
+upgradeFive Poisons	upgrade Five Poisons
+constructMill	construct Mill
+constructCarpenter	construct Carpenter
+constructPharmacy	construct Pharmacy
+constructResidence	construct Residence
+constructSchool	construct School
+constructGarden	construct Garden
+constructStone Archway	construct Stone Archway
+constructStorage Room	construct Storage Room
+constructStall Vendor	construct Stall Vendor
+Rumor少林	Rumor: Shaolin Temple 
+Rumor武当	Rumor: Wudang Sect 
+Rumor峨眉	Rumor: Emei Sect 
+Rumor唐门	Rumor: Tangmen 
+Rumor五毒	Rumor: Five Poisons Sect 
+Rumor金刚	Rumor: Vajra Esoteric Sect 
+Rumor霹雳	Rumor: Thunderclap Hall 
+Rumor天山	Rumor: Tianshan Sect 
+Rumor阎罗	Rumor: Yanluo Sect 
+Rumor飞龙	Rumor: Flying Dragon Sect 
+Rumor长乐	Rumor: Changle Gang 
+attacked 少林	attacked Shaolin Temple 
+attacked少林	attacked Shaolin Temple 
+attacked 武当	attacked Wudang Sect 
+attacked武当	attacked Wudang Sect 
+attacked 唐门	attacked Tangmen 
+attacked唐门	attacked Tangmen 
+attacked 霹雳	attacked Thunderclap Hall 
+attacked霹雳	attacked Thunderclap Hall 
+attacked 金刚	attacked Vajra Esoteric Sect 
+attacked金刚	attacked Vajra Esoteric Sect 
+attacked 铸剑	attacked Sword Forging Villa 
+attacked铸剑	attacked Sword Forging Villa 
+plans to secretly learn霹雳	plans to secretly learn from Thunderclap Hall 
+plans to secretly learn武当	plans to secretly learn from Wudang Sect 
+plans to secretly learn唐门	plans to secretly learn from Tangmen 
+plans to poison暗害	plans to poison 
+train day and night，终于将	trained day and night and raised 
+Sect LeaderAffection	Sect Leader Affection
+this placeDefense	this place is heavily guarded; its defenses are 
+Disciples看守	disciples stand guard
+Spend 好些功夫	After considerable effort
+Movement Art，足以	Movement Art, I can
+Guards潜入	guards and infiltrate
+Manual越稀有	Manuals become rarer
+Defense也越森严	defenses become tighter
+Goal would you like to prepare this time?	target?
+应当如何行事为好 would you like to prepare this time?	what should I do now?
+没时间carefully select了	There is no time to choose carefully
+赶 in 增援到来前尽快逃离	then escape as quickly as possible before reinforcements arrive
+Rare and precious treasuresunearthed	rare treasures are unearthed
+Ruins赫然眼前	ruins suddenly come into view
+Knowledge辨别	Knowledge to identify them
+in 一处炊烟袅袅的山洞	in a cave with smoke curling from its entrance
+Weapon向你扑来	weapon and lunges at you
+this place就是你的葬身之地	this place will be your grave
+
+# TEST26 - hybrid cleanup aliases
+So you areXianxia Sect	So you are Xianxia Sect
+I amKongtong Sect	I am Kongtong Sect
+I amJianghu	I am Jianghu
+Peerless香囊	Peerless Sachet
+CurrentlyWudang Sect	Currently at Wudang Sect
+CurrentlyXianxia Sect	Currently at Xianxia Sect
+Jianglingeast	east of Jiangling
+Jianglingwest	west of Jiangling
+Jianglingnorth	north of Jiangling
+Jianglingsouth	south of Jiangling
+Heroine Shui啊	Heroine Shui
+Young Hero Jin啊	Young Hero Jin
+Jin Woo啊	Jin Woo
+Hahaha!哈	Hahaha!
+Hahaha!，	Hahaha! 
+Banquet圆满结束了	Banquet concluded successfully
+Win负已分	The results are settled
+
+# TEST28 - mixed-English cleanup from Latest(20260831-162000).log
+Current Sect Treasury的Silver储量为	Current Sect Treasury Silver reserves: 
+，Silver carried: 	. Silver carried: 
+taels。	taels.
+How much Silver would you like to donate？	How much Silver would you like to donate?
+The镖师's help request	The escort's help request
+Government OfficeConstable月俸：	Government Office Constable monthly salary:
+Xianxia Secthas always followed a moderate path	Xianxia Sect has always followed a moderate path
+Befriending heroes from across the land， is a martial artist毕生之夙愿	Befriending heroes from across the land is a lifelong aspiration for a martial artist
+Healing效果越好，Increase 越多Affection	the better the healing effect, the more Affection increases
+Disciple, you came at just the right time，本门的庭院屋舍近来	Disciple, you came at just the right time. Our sect's courtyards and buildings lately
+Very good, very good，clean and tidy，焕然一新	Very good, very good, clean and tidy, looking completely refreshed
+I've long heard of Xianxia Sect <color=#9A7CFF>亲传弟子</color>	I've long heard of Xianxia Sect <color=#9A7CFF>Prime Disciple</color>
+今日一见果真名不虚传	Meeting you today, I can see your reputation is well deserved
+这<color=#8C8C8C>Donkey</color> 实 in precious	This <color=#8C8C8C>Donkey</color> is truly precious
+Since this item is dear to Young Hero Jin，	Since this item is dear to Young Hero Jin,
+Still tied up with the usual affairs。	Still tied up with the usual affairs.
+It is rare to have some free time today，	It is rare to have some free time today,
+恰好Junior Brother Jin也 in ，	Junior Brother Jin happens to be here too,
+承蒙Junior Brother Jin与单弟抬爱	Thank you, Junior Brother Jin and Brother Shan, for your kind regard
+可惜我还有事 in 身	Unfortunately, I still have business to attend to
+只能先行Take my leave	so I must take my leave first
+两位We will meet again in the future.	We will meet again, both of you.
+though not one of the great prestigious sects，却也 in 	though not one of the great prestigious sects, it nonetheless 
+Junior Brother Jin若 in Martial Arts上有疑惑不解之处，只管来问我便	Junior Brother Jin, if you have any questions about Martial Arts, feel free to ask me
+Thank youYoung Hero Jin兄出手相助	Thank you, Young Hero Jin, for your help
+these谢礼please 笑纳	please accept these gifts as my thanks
+只是此地Danger，不宜久留	But this place is dangerous, so we should not linger
+我和兄弟们就先Take my leave了	my brothers and I will take our leave first
+Ah，会议好像已经开始了，得赶快入座才	Ah, looks like the meeting has already started. I should hurry and take my seat
+The strength of the sect has declined.\nMain方针 巩固实力\n本月方针 内务Preparation	The strength of the sect has declined.\nMain Policy: Consolidate Strength\nThis Month's Policy: Internal Affairs Preparation
+Disciple, you’re back，the task I gave you	Disciple, you're back. The task I gave you
+
+# TEST29 - mixed-output cleanup from Latest(20260831-165614).log
+Heroine's Trail(三)	Trace of a Heroine (III)
+[Merit已满]	[Merit Maxed]
+Mine中...	Working in the Mine...
+Ritual中...	Performing Ritual...
+day时间	day
+days时间	days
+Increase 效果	Increase effect
+Promotion为	 promoted to 
+New Jianghu Rumor: <color=#9A7CFF>千里名驹</color>	New Jianghu Rumor: <color=#9A7CFF>Thousand-Li Steed</color>
+Renowned MasterCommoner Clothes	Renowned Master Commoner Clothes
+Renowned MasterScholar Outfit	Renowned Master Scholar Outfit
+this sessionXianxia SectCompetition	this Xianxia Sect Tournament
+Martial Art Level of cultivation	Martial Arts cultivation
+
+# TEST32 normalization / concatenation fixes
+Prayed in	 joined 
+SectFood	Sect Food
+ConsumeSectFood	Consumes Sect Food 
+Factiongained Food	Faction gained Food 
+PopulationIncrease	Population Increase 
+Public OpinionIncrease	Public Opinion Increase 
+DefenseIncrease	Defense Increase 
+Martial Artshas	Martial Arts has
+Senior Brother Jin不弃	Senior Brother Jin for taking me in
+Brother Jin不弃	Brother Jin for taking me in
+Vice Sect Leaderyou	Vice Sect Leader, you
+Jin Elder你来的正好	Elder Jin, you came at the right time
+
+# TEST33 recurring mixed-output normalization
+藏宝Map	Treasure Map
+Our SectDisciples	Our Sect Disciples
+Monthly WoodOutput	Monthly Wood Output
+Monthly OreOutput	Monthly Ore Output
+Monthly HerbsOutput	Monthly Herbs Output
+Reduce 42%Damage Taken	Reduces Damage Taken by 42%
+Reputation加成	Reputation Bonus 
+UpgradeMerit	Promotion Merit 
+Generous and Benevolent，	Generous and Benevolent, 
+Acquainted多日	have known each other for many days
+FriendFriend	Friend
+知己Friend	close friend
+in Infirmary中	in the Infirmary
+HealingSelf伤势	heal your injuries
+Current Injuries：	Current Injuries: 
+Jianghu中人	people of the Jianghu
+Steady有余	is steady enough
+Flexible巧变	flexibility and variation
+
+# TEST34 EnglishPatch source canonical normalization
+Hanoi Township	Henei Township
+Qamdo Town	Changdu Town
+Nagqu Township	Naqu Township
+Medicine King Valley	Yaowang Valley
+Beggar Sect	Beggars Sect
+Flying Dragon Gate	Flying Dragon Sect
+Swordforging Manor	Sword Forging Villa
+Yama Hall	Yama Palace
+Great Hidden Pavilion	Dayin Pavilion
+Tyrant Blade Sect	Badao Sect
+Divine Mechanism Sect	Shenji Sect
+Righteous Alliance Gate	Alliance of Justice
+Sea Sand Gang	Haisha Gang
+Thousand-Mile Steed	Thousand-Li Steed
+
+# TEST35 canonical sect normalization / EnglishPatch compatibility
+Tangmen	Tang Sect
+Tang Clan	Tang Sect
+Miaoshan Sect	Maoshan Sect
+Bagua Gate	Bagua Sect
+Five Venom Sect	Five Poisons Sect
+Wu-Tang Clan	Wudang Sect
+Wu-Tang Sect	Wudang Sect
+
+# TEST39 mixed-output cleanup
+Chapter 三 Chapter	Chapter 3:
+Chapter 一 Chapter	Chapter 1:
+Experience 获取	Experience Gained
+HealthInner ForceRegeneration	Health and Inner Force Restoration 
+constructing中	Under Construction
+Recruit弟	Recruit Disciples
+Practice Martial Arts可	martial arts practice
+对Our SectMartial Arts的精要之处一知半解	only half understand the essence of Our Sect’s Martial Arts
+与Master抬爱	and Master’s kindness
+徒儿	Disciple
+
+# TEST40 canonical mixed-output normalization
+Combat Tournament	Martial Arts Tournament
+Royal Treasury	Imperial Treasury
+Utopia in the clouds	Hidden Paradise
+Sect Quests	Sect Quest
+Branch Sect	Branch
+Recruit1名	Recruit 1 
+Recruit2名	Recruit 2 
+Recruit3名	Recruit 3 
+一 Level	Level 1
+二 Level	Level 2
+三 Level	Level 3
+四 Level	Level 4
+五 Level	Level 5
+六 Level	Level 6
+七 Level	Level 7
+八 Level	Level 8
+九 Level	Level 9
+十 Level	Level 10
+Level 一	Level 1
+Level 二	Level 2
+Level 三	Level 3
+Level 四	Level 4
+Level 五	Level 5
+Level 六	Level 6
+Level 七	Level 7
+Level 八	Level 8
+Level 九	Level 9
+Level 十	Level 10
+第1place	1st Place
+第2place	2nd Place
+第3place	3rd Place
+Jin Elder	Elder Jin
+Jin Great Hero	Great Hero Jin
+Jin WooGreat Hero	Great Hero Jin Woo
+please please	please
+Silver taels	taels of Silver
+Two silver coins	taels of Silver
+
+# TEST40 extra mixed-output cleanup
+Sect Quest完成	Sect Quest Complete
+同门Sparring	Intra-Sect Sparring
+Battle信息	Battle Information
+Main Hall Upgrade to 二 Is it level?	Upgrade the Main Hall to Level 2?
+Confirm研究[	Confirm research [
+]科技？	]?
+将消耗Sect Silver	This will cost the Sect 
+Training至十重	Training to Level 10
+Seclusion Chamber消耗	Seclusion Chamber, spend 
+Talent points 领悟Talents	Talent Points to unlock Talents
+Learn 了新Martial Arts	learned a new Martial Art
+Cooking了	cooked 
+train in 了	trained in
+
+# TEST40 additional English-mixed cleanup
+Agility训练	Agility Training
+Extracting Manual	Extraction Manual
+Extracting Training	Extraction Training
+Forging ManualLv	Forging Manual Lv 
+Production Management Lv	Production Management Lv 
+Start researching[	began researching [
+Guardcareful protection	careful protection
+Our Sectmartial artists	Our Sect martial artists
+Dragon Boat FestivalFestival	Dragon Boat Festival
+Strolling around一番	strolling around
+JiangnanWin景	Jiangnan scenic spot
+意气Ranger	spirited wanderers
+Difficulty越高	The higher the difficulty
+Appraisal出了其中大半	appraised most of them
+Great HeroThese	Great Hero, these
+Sect LeaderThese	Sect Leader, these
+ElderIf	Elder, if
+ElderI	Elder, I
+I amYama Palace	I am from Yama Palace
+I amXianxia Sect	I am from Xianxia Sect
+Reputation+	Reputation +
+PeerlessJewels	Peerless Jewels
+Condition?	Condition:
+Specialties/Products from history books	Specialties: Historical Records
+Specialties/Medicinal ingredients	Specialties: Medicinal Ingredients
+Please think carefully about this	Please consider that carefully.
+Amused me	That is laughable.
+Fei Long Gate	Flying Dragon Sect
+Yan Luodian	Yama Palace
+Faction Warehouse	Sect Warehouse
+Strengthen muscles	Tendon Ease
+Wound tendons	Tendon Injury
+Blood loss	Bleed
+Dizziness	Stun
+Blindness	Blind
+Basic Damage	Base Damage
+Inner Force Consumption	Inner Force Cost
+Inner Force consumption	Inner Force Cost
+Defensive posture	Defensive Stance
+Defensive stance	Defensive Stance
+Offensive stance	Offensive Stance
+Upgrade Effects	Upgrade Effect
+Breakthrough effects	Breakthrough Effects
+Training requirements	Training Requirement
+Debuff Chance	Negative Status Potency
+
+# TEST41 canonical mechanics/rank normalization aliases
+Keen Sight	Insight
+Sharp Eye	Insight
+Blood Vitality	Blood Circulation
+Invigorate Blood	Blood Circulation
+Blood Activation	Blood Circulation
+Charge Power	Charge
+Force absorption	Force Deflection
+Negative modifier	Negative Status Potency
+Negative Modifier	Negative Status Potency
+Negative Bonus	Negative Status Potency
+Negative Buff	Negative Status Potency
+Negative buffs	Negative Status Potency
+Damage Bonus	Damage Scaling
+Attack Stance	Offensive Stance
+Defense Stance	Defensive Stance
+Pinnacle Fist	Ultimate Fist
+Pinnacle Sword	Ultimate Sword
+Pinnacle Blade	Ultimate Blade
+Pinnacle Polearm	Ultimate Polearm
+Pinnacle Archery	Ultimate Archery
+Pinnacle Qimen	Ultimate Qimen
+Pinnacle Internal Art	Ultimate Internal Art
+Pinnacle Movement Art	Ultimate Movement Art
+Pinnacle Body Art	Ultimate Body Art
+High-grade Fist	Superior Fist
+High-grade Sword	Superior Sword
+High-grade Blade	Superior Blade
+High-grade Polearm	Superior Polearm
+High-grade Archery	Superior Archery
+Mysterious Legend Gate	Secret Qimen
+Supreme Secret Art	Superior Qimen
+
+# TEST42 legacy/canonical normalization aliases
+Jiang Hu	Jianghu
+Wu Dangpai	Wudang Sect
+Jin Gangmizong	Vajra Esoteric Sect
+Yan Luo	Yama Palace
+ShangGuan	Shangguan
+DongMen	Dongmen
+BeiMing	Beiming
+BeiTang	Beitang
+NanGong	Nangong
+WanYan	Wanyan
+ZuoQiu	Zuoqiu
+XiMen	Ximen
+Mount Tai Giant Codex	Taiyue Grand Assembly
+Traverse the mountains and rivers	Journey Down the Mountain
+Descending the mountain for a tour	Journey Down the Mountain
+Chief villain	Bandit Leader
+Prime Disciple Taoist Robe	Prime Disciple Daoist Robe
+Official disciple robe	Core Disciple Daoist Robe
+Personal disciple's robe	Prime Disciple Daoist Robe
+Beginner's robe	Inner Disciple Daoist Robe
+External disciple robe	Outer Disciple Daoist Robe
