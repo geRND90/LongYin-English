@@ -6,7 +6,11 @@ The project combines canonical terminology, contextual replacements, procedural 
 
 ## Download
 
-For normal installation, download the compiled ZIP from the latest GitHub Release. You do not need the source files from the repository.
+For normal installation, download the compiled package:
+
+**[LongYinEnglish v0.1.8-test42](downloads/LongYinEnglish_v0.1.8-test42.zip)**
+
+You do not need the source files from the repository.
 
 ## Installation
 
@@ -56,4 +60,3 @@ TEST42 expands coverage from the latest unresolved-text log while preserving the
 - ComplexData quest patches remain excluded for stability.
 - The UI Stabilizer and Building Actions mods are separate projects and are not included here.
 - Translation coverage is still being tested and refined.
-
