@@ -622,6 +622,7 @@ namespace LongYinEnglish
             else if (s=="研") result="Research";
             else if (s=="口") result="Eloquence";
             else if (s=="力") result="Strength";
+            else if (s=="长") result="Polearm";
             else return false;
             return true;
         }
