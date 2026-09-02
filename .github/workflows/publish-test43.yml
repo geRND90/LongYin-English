@@ -1,0 +1,103 @@
+name: Publish TEST43 data wave
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-test43.yml'
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.event_name == 'push' || github.event.issue.title == '[release] publish TEST43'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out TEST42 source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply and verify TEST43 data
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object UserData/LongYinEnglish/canonical.tsv)" = "35a54c96c37309a0c973106b583c8f5f3d0d6c55"
+          test "$(git hash-object UserData/LongYinEnglish/tokens.tsv)" = "0d05862c05bfd4ac7a360bebba37588ffcc0498c"
+          test "$(git hash-object UserData/LongYinEnglish/fallback_exact.tsv)" = "9eae68f16be9f294680d3d69091fdb58745ea49d"
+          test "$(git hash-object UserData/LongYinEnglish/regex.tsv)" = "a9e081e14def1f4c521a5ac6f9984cdf5fa3fb0d"
+          git apply --check .github/test43-data.patch
+          git apply .github/test43-data.patch
+          test "$(git hash-object UserData/LongYinEnglish/canonical.tsv)" = "41c9a34e156116ec0fcda2cc8637e97c3d5d9c71"
+          test "$(git hash-object UserData/LongYinEnglish/tokens.tsv)" = "2de02c625877a64b3665ee066b6ee4700c3e8624"
+          test "$(git hash-object UserData/LongYinEnglish/fallback_exact.tsv)" = "1b0aefd8fa681a614aea42d47db2202d17b1a294"
+          test "$(git hash-object UserData/LongYinEnglish/regex.tsv)" = "82bf1a38a986065437b6b7277cec2a1578f41ab6"
+
+      - name: Commit TEST43 source data
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/test43-data.patch .github/workflows/publish-test43.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add UserData/LongYinEnglish .github
+          git commit -m "Release TEST43 canonical data wave"
+          git push origin HEAD:main
+
+      - name: Build installable package from TEST42 core
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="LongYinEnglish_v0.1.8_TEST43_LATEST_628_CANONICAL_DATA_WAVE.zip"
+          curl --fail --location --retry 3 \
+            "https://github.com/geRND90/LongYin-English/releases/download/v0.1.8-test42/LongYinEnglish_v0.1.8-test42.zip" \
+            --output test42.zip
+          mkdir package
+          unzip -q test42.zip -d package
+          test "$(sha256sum package/Mods/LongYinEnglish.dll | cut -d' ' -f1)" = "21683a5df19bcc6305a29cc8fb990e26112829f123477a2eb7cb6e315786d5c4"
+          cp -f UserData/LongYinEnglish/*.tsv package/UserData/LongYinEnglish/
+          (
+            cd package
+            zip -9 -q -r "../$archive" Mods UserData
+          )
+          unzip -t "$archive"
+          sha256sum "$archive" | tee TEST43_SHA256.txt
+
+      - name: Publish GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          archive="LongYinEnglish_v0.1.8_TEST43_LATEST_628_CANONICAL_DATA_WAVE.zip"
+          checksum="$(cut -d' ' -f1 TEST43_SHA256.txt)"
+          cat > release-notes.md <<EOF
+          TEST43 canonical translation data wave, generated from Latest(20260902-005115).log.
+
+          ### Highlights
+          - Analyzed all 628 unresolved records, including 239 records with visible CJK.
+          - Added 196 safe reusable translations and 40 contextual regex rules.
+          - Added 62 longer procedural NPC names and 19 context-guarded short names.
+          - Expanded UI, narrative, combat, sect, quest, poisoning, training, and generated-log coverage.
+          - Preserved the established canonical terminology and passed the structural data audit.
+
+          ### Important
+          This is a data-only update built on the TEST42 compiled core. The DLL may still identify itself as v0.1.8-test42 in the log; this is expected.
+
+          ### Installation
+          1. Download the ZIP below.
+          2. Extract it into the game root directory.
+          3. Allow Windows to merge the included Mods and UserData folders.
+          4. Start the game.
+
+          SHA-256: \`$checksum\`
+          EOF
+          gh release create "v0.1.8-test43-data" "$archive" \
+            --repo "geRND90/LongYin-English" \
+            --target "$(git rev-parse HEAD)" \
+            --title "LongYin English v0.1.8-test43-data" \
+            --notes-file release-notes.md \
+            --prerelease
