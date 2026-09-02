@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.8-test45-data
+
+- Processed all 447 unresolved records from Latest(20260902-135825).log.
+- Covered every Chinese fragment visible in the 110 readable unresolved previews.
+- Added 3 canonical event titles and replaced 2 lower-quality fallback translations.
+- Added 64 safe reusable token translations, including 44 longer procedural NPC names.
+- Added 17 context-guarded regex rules for short procedural names and a glued name/verb form.
+- Expanded the alias table by 40 net mappings for late mixed output, rich-text variants, dialogue, rumors, officeholder descriptions, rewards, mail, and grammar cleanup.
+- Preserved all established canonical terminology and the verified compiled TEST44 DLL.
+- Completed the data audit with no duplicate keys, duplicate regex groups, shadowed fallbacks, invalid TSV rows, exact self-aliases, or unsafe single-character CJK tokens.
+
+Full details are available in docs/TEST45_AUDIT.txt.
+
 ## v0.1.8-test44
 
 - Replaced the TEST42 compiled core with the newly compiled TEST44 DLL.
