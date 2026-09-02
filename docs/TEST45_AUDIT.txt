@@ -1,0 +1,72 @@
+LongYin English translation data wave TEST45
+Source log: Latest(20260902-135825).log
+Runtime observed in log: LongYin English Core v0.1.8-test42 with TEST44 data counts
+Installable base: verified compiled v0.1.8-test44 package
+
+SCOPE
+- This is a translation-data-only installable update built on the compiled TEST44 core.
+- No C# source, DLL, UI sizing, Building Actions, game file, or unrelated mod was changed.
+- The verified TEST44 compiled DLL and its path-guarded Research abbreviation fix are preserved.
+
+LATEST LOG
+- Unresolved captured: 447 / 2000.
+- Capture limit was not reached; the complete session was available.
+- Records with visible CJK inside the diagnostic preview: 110.
+- Diagnostic previews truncated at 130 characters: 425.
+- Every CJK fragment visible in the 110 readable previews is covered by the TEST45
+  token, alias, or context-guarded regex rules.
+- Reusable structural fragments were preferred for truncated entries; unseen text was
+  not guessed.
+
+LATEST-LOG COVERAGE
+- Added 3 canonical event titles: Expert Instruction, Ancient Divine Tree, and Flying Arrow.
+- Replaced 2 lower-quality fallback event translations with the canonical versions.
+- Added 64 safe reusable token translations, including 44 longer procedural NPC names.
+- Added 17 context-guarded regex rules, including 16 short procedural NPC names and
+  one glued name/verb form observed in the log.
+- Expanded the alias table by 40 net mappings for fragments produced late in the translation
+  pipeline, rich-text variants, generated rumors, officeholder descriptions, dialogue,
+  mail, rewards, Sect assembly text, and spacing/grammar cleanup.
+- Corrected generated forms including Rumor: Changle Gang, Rumor: Alliance of Justice,
+  Zhangsun Yingfeng, Spirit Fruit rewards, Chess Manual trends, and Recruit Disciples.
+- Expanded Xing Min, Long Hanchi, Heroine Qin, and Ma Baoguo dialogue handling.
+
+PROCEDURAL NAME SAFETY
+- Longer names observed in generated NPC slots are reusable token translations.
+- Two-character names are translated only after a rich-text rank or promotion marker.
+- No global aliases were added for Chinese numerals or ambiguous one-character names.
+- The standalone Research abbreviation 长 remains handled only by the compiled TEST44
+  path guard and was not added as a global data rule.
+
+CANONICAL LOCKS PRESERVED
+- Tang Sect, Maoshan Sect, Bagua Sect, and Sect.
+- Superior Martial Arts, Secret Martial Arts, Martial Arts Tournament, and Sect Tournament.
+- Assassin Leader, Pao Ding Ox-Carving Blade, Horse Bandit Stronghold, Private School,
+  Quiet Room, Quarry, and Daoist Wenyi.
+- Martial Art progression remains Layer N; percentage Combo remains Combo Rate.
+- Pack, Sect Warehouse, Affection, Combat Experience, Theory Experience, and Poisoning
+  terminology remain consistent with the established dictionaries.
+
+FINAL DATA AUDIT
+- canonical.tsv: 20,769 records
+- tokens.tsv: 12,019 records
+- fallback_exact.tsv: 15,345 records
+- regex.tsv: 5,216 records
+- aliases.tsv: 980 records
+- npc_names.tsv: 324 records
+- npc_surnames.tsv: 435 records
+- npc_given_chars.tsv: 1,018 records
+- building_names.tsv: 76 records
+- Duplicate dictionary keys: 0.
+- Duplicate regex pattern+trigger groups: 0.
+- Fallback keys shadowed by canonical: 0.
+- Exact self-referential aliases: 0.
+- Invalid TSV column counts: 0.
+- New unsafe single-character CJK tokens: 0.
+- English numeric output labels retaining Chinese numerals: 0.
+- Readable unresolved previews retaining visible CJK in the coverage simulation: 0 / 110.
+
+SAFE KNOWN LIMITATION
+- 425 diagnostic previews were truncated by the runtime at 130 characters. TEST45 covers
+  their readable fragments and recurring structures, but text hidden beyond the preview
+  cannot be translated literally without a later log that exposes it.
