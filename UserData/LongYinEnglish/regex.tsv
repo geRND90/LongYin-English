@@ -5197,6 +5197,50 @@ I wonder 是否愿意exchange a few pointers。?	I wonder if you'd be willing to
 ^门派任务\n在(?<p1>.+?)分舵探索(?<p2>[0-9]+)次(?<p3>[\s\S]*)$	Sect Quest\nExplore the ${p1} Branch ${p2} time(s)${p3}	分舵探索
 
 # TEST40 structural mixed-output cleanup
+
+# TEST43 latest-log contextual cleanup
+^(?<prefix>[\s\S]+?)掌门(?<who>[\s\S]+?)将《(?<skill>[\s\S]+?)》(?<edition>[\s\S]+?)秘籍放入藏经阁，供全派弟子参阅。$	${prefix} Sect Leader ${who} placed ${edition} edition of ${skill} in the Scripture Pavilion for all disciples to study.	秘籍放入藏经阁，供全派弟子参阅
+^Jin Woo: Yue Yue\?\n你 in 我Xianxia Sectwhat are you doing sneaking around(?<tail>[^\n]*)(?<rest>[\s\S]*)$	Jin Woo: Yue Yue?\nWhat are you doing sneaking around inside my Xianxia Sect${tail}${rest}	你 in 我Xianxia Sect
+^Legend says that in(?<place>[A-Za-z][A-Za-z ]*?)(?:the eastern outskirts|the western outskirts|the northern outskirts|the southern outskirts)，a gifted youth with Exceptional Talent，is a rare Martial ArtsProdigy，附近Sect人士(?<tail>[\s\S]*)$	Legend says that near ${place}, a gifted young martial artist of exceptional talent has appeared. People from nearby sects are flocking there${tail}	附近Sect人士
+\(因超过Level (?<level>[0-9]+)，Practice只获取(?<pct>[0-9]+)%Experience！\)	(Because the skill is above Layer ${level}, practice grants only ${pct}% Experience!)	只获取
+\(因超过(?<level>[0-9]+)级，练习只获取(?<pct>[0-9]+)%经验！\)	(Because the skill is above Layer ${level}, practice grants only ${pct}% Experience!)	练习只获取
+\(Combat Experience Full，将以(?<pct>[0-9]+)%比例转化为Theory Experience！\)	(Combat Experience is full; ${pct}% will be converted to Theory Experience!)	将以
+\(实战经验已满，将以(?<pct>[0-9]+)%比例转化为理论经验！\)	(Combat Experience is full; ${pct}% will be converted to Theory Experience!)	实战经验已满
+Break through to the next level of 五 Heavily!	Break through to Layer 5!	五 Heavily
+Break through to the next level of 十 Heavily!	Break through to Layer 10!	十 Heavily
+Upgrade to 三 Is it level\?	Upgrade to Level 3?	三 Is it level
+Rumor(?<sect>[A-Za-z][A-Za-z ]+?)Spend (?<silver>[0-9]+)SilverRecruit了(?<who>[\s\S]+)$	Rumor: ${sect} spent ${silver} Silver to recruit ${who}	了
+Requires knowledge (?<knowledge>[0-9]+)/射(?<archery>[0-9]+)	Requires Knowledge ${knowledge}/Archery ${archery}	射
+^传说在(?<place>.+?)(?:郊外|东郊|西郊|南郊|北郊)，有名少年天资过人，乃是世间少见的武学奇才，附近门派人士纷纷前往欲招揽此人。(?<tail>[\s\S]*)$	Legend says that near ${place}, a gifted young martial artist of exceptional talent has appeared. People from nearby sects are flocking there in hopes of recruiting this prodigy.${tail}	附近门派人士纷纷前往欲招揽此人
+^Legend says that in(?<place>[A-Za-z][A-Za-z ]*?)(?<dir>east|west|north|south) Ruins之中，there is a(?:wandering the Jianghu|Wandering四海) Reclusive Expert隐居于此，有缘面见之人或许能够得其true teachings。(?<tail>[\s\S]*)$	Legend says that among the Ruins ${dir} of ${place}, a Reclusive Expert who wanders the Jianghu has taken up residence. Those fortunate enough to meet them may inherit their true teachings.${tail}	隐居于此
+^赵胤宗的龙胤归藏功重现江湖，各大门派决定于<b>一个月后</b>在泰山举办第二届泰岳大典，商定神功归属。\\n许多武林人士已提前前往<b>(?<place>[\s\S]+?)</b>，欲一睹这场空前绝后之盛会。$	Zhao Yinzong's Dragon Lineage Guizang Art has reappeared in the Jianghu. The major sects have decided to hold the Second Taiyue Grand Assembly on Mount Tai <b>one month from now</b> to determine who will inherit it.\\nMany martial artists have already traveled to <b>${place}</b> to witness this unprecedented gathering.	赵胤宗的龙胤归藏功重现江湖，各大门派决定于
+^你将抄录成品(?<item>[\s\S]+?)放入行囊[。.]?$	You placed the completed copy of ${item} in the Pack.	你将抄录成品
+^泰岳奇闻\((?<place>[A-Za-z][A-Za-z ]*?)north\)$	Tales of Taiyue (north of ${place})	泰岳奇闻
+^泰岳奇闻\((?<place>[A-Za-z][A-Za-z ]*?)south\)$	Tales of Taiyue (south of ${place})	泰岳奇闻
+^泰岳奇闻\((?<place>[A-Za-z][A-Za-z ]*?)east\)$	Tales of Taiyue (east of ${place})	泰岳奇闻
+^泰岳奇闻\((?<place>[A-Za-z][A-Za-z ]*?)west\)$	Tales of Taiyue (west of ${place})	泰岳奇闻
+(?<open><color=[^>]+>)地动山摇(?<close></color>)	${open}Earth-Shaking${close}	地动山摇
+
+# TEST43 short procedural names: translate only after a rich-text rank or promotion marker
+(?<prefix>(?:</color>\s+|will\s+))海翠(?=\s)	${prefix}Hai Cui	海翠
+(?<prefix>(?:</color>\s+|will\s+))周袖(?=\s)	${prefix}Zhou Xiu	周袖
+(?<prefix>(?:</color>\s+|will\s+))隆诺(?=\s)	${prefix}Long Nuo	隆诺
+(?<prefix>(?:</color>\s+|will\s+))融辛(?=\s)	${prefix}Rong Xin	融辛
+(?<prefix>(?:</color>\s+|will\s+))籍约(?=\s)	${prefix}Ji Yue	籍约
+(?<prefix>(?:</color>\s+|will\s+))阙器(?=\s)	${prefix}Que Qi	阙器
+(?<prefix>(?:</color>\s+|will\s+))福芽(?=\s)	${prefix}Fu Ya	福芽
+(?<prefix>(?:</color>\s+|will\s+))何相(?=\s)	${prefix}He Xiang	何相
+(?<prefix>(?:</color>\s+|will\s+))孙容(?=\s)	${prefix}Sun Rong	孙容
+(?<prefix>(?:</color>\s+|will\s+))水剑(?=\s)	${prefix}Shui Jian	水剑
+(?<prefix>(?:</color>\s+|will\s+))甄架(?=\s)	${prefix}Zhen Jia	甄架
+(?<prefix>(?:</color>\s+|will\s+))宣型(?=\s)	${prefix}Xuan Xing	宣型
+(?<prefix>(?:</color>\s+|will\s+))仰重(?=\s)	${prefix}Yang Zhong	仰重
+(?<prefix>(?:</color>\s+|will\s+))钦来(?=\s)	${prefix}Qin Lai	钦来
+(?<prefix>(?:</color>\s+|will\s+))况悦(?=\s)	${prefix}Kuang Yue	况悦
+(?<prefix>(?:</color>\s+|will\s+))鲍发(?=\s)	${prefix}Bao Fa	鲍发
+(?<prefix>(?:</color>\s+|will\s+))商入(?=\s)	${prefix}Shang Ru	商入
+(?<prefix>(?:</color>\s+|will\s+))秋固(?=\s)	${prefix}Qiu Gu	秋固
+(?<prefix>(?:</color>\s+|will\s+))红盈(?=\s)	${prefix}Hong Ying	红盈
 ^(?<p1><color=[^>]+>[^<]+</color>) 对(?<p2><color=[^>]+>[^<]+</color>) dealt critical damage (?<p3>[0-9]+)(?:点| points?)(?<p4>[\s\S]*)$	${p1} dealt ${p3} critical damage to ${p2}${p4}	dealt critical damage
 ^(?<p1><color=[^>]+>[^<]+</color>) 对(?<p2><color=[^>]+>[^<]+</color>) dealt (?<p3>[0-9]+)(?:点| points?)(?<p4>[\s\S]*)$	${p1} dealt ${p3} damage to ${p2}${p4}	 dealt 
 ^(?<p1>[\s\S]*?)Sect Quests?\nRecruit(?<p2>[0-9]+)名(?<p3><color=[^>]+>.+?</color>)(?<p4>[\s\S]*)$	${p1}Sect Quest\nRecruit ${p2} ${p3}${p4}	名
