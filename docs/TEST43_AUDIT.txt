@@ -1,0 +1,68 @@
+LongYin English translation data wave TEST43
+Source log: Latest(20260902-005115).log
+Runtime base: LongYin English Core v0.1.8-test42
+
+SCOPE
+- This is a translation-data-only update built on the compiled TEST42 core.
+- No DLL behavior, UI sizing, Building Actions, or game files were changed.
+- The TEST38/TEST40 protections remain intact: accumulated histories stay line-by-line,
+  regex rules retain the runtime timeout, and long-string safeguards are unchanged.
+
+LATEST LOG
+- Unresolved captured: 628 / 2000.
+- Capture limit was not reached; the complete session was available.
+- Records with visible CJK inside the diagnostic preview: 239.
+- Diagnostic previews truncated at 130 characters: 543.
+- The repeated paths were dominated by accumulated HUD/area logs, hero histories,
+  SimpleDetail, hero/equipment/book/skill cards, SurePanel, and Plot records.
+
+TEST43 COVERAGE
+- Added 196 safe reusable token translations from the latest log.
+- Added 40 contextual regex rules.
+- Added 62 procedural NPC names of three or more CJK characters as safe name tokens.
+- Added 19 short procedural NPC names only after rich-text rank/promotion markers,
+  preventing ordinary two-character words from being romanized as people.
+- Corrected building upgrade, commission reward, trading, crafting/Pack, retirement,
+  recruitment, promotion, and generated-world-log grammar.
+- Expanded practice confirmations, over-level experience penalties, Combat-to-Theory
+  conversion notices, breakthrough layer labels, and Level 3 building prompts.
+- Expanded poison-system help, Poisoning Bonuses, Fortifications, stance labels,
+  Book Writer timing/cost/progress fields, Sect Escort, Harvest, and Research output.
+- Added or corrected Zhongyuan Ghost Market, Tales of Taiyue, Capture the Roaming
+  Bandits, Earth-Shaking, Reclusive Expert, Martial Arts Prodigy, Double Ninth Festival,
+  and Dragon Lineage Guizang Art narrative/event text.
+- Expanded Jiang Yingquan/Jin Woo/Yue Yue, escort-chief, and Chanyu Leliu dialogue.
+
+CANONICAL LOCKS PRESERVED
+- Tang Sect, Maoshan Sect, Bagua Sect, and Sect.
+- Superior Martial Arts, Secret Martial Arts, Martial Arts Tournament, and Sect Tournament.
+- Assassin Leader, Pao Ding Ox-Carving Blade, Horse Bandit Stronghold, Private School,
+  Quiet Room, Quarry, and Daoist Wenyi.
+- Martial progression remains Layer N.
+- Percentage Combo remains Combo Rate.
+- Pack, Sect Warehouse, Affection, Combat Experience, Theory Experience, and
+  Poisoning terminology are kept consistent with the established dictionaries.
+
+FINAL DATA AUDIT
+- canonical.tsv: 20,766 records
+- tokens.tsv: 11,931 records
+- fallback_exact.tsv: 15,347 records
+- regex.tsv: 5,191 records
+- aliases.tsv: 803 records
+- npc_names.tsv: 324 records
+- npc_surnames.tsv: 435 records
+- npc_given_chars.tsv: 1,018 records
+- building_names.tsv: 76 records
+- Duplicate dictionary keys: 0.
+- Duplicate regex pattern+trigger groups: 0.
+- Fallback keys shadowed by canonical: 0.
+- Self-referential aliases: 0.
+- Invalid TSV column counts: 0.
+
+SAFE KNOWN LIMITATION
+- The standalone Research abbreviation 长 remains intentionally untranslated in this
+  data-only wave. Translating that one-character value globally could corrupt names and
+  prose; it should only be added through the exact HUD-path guard in a future DLL build.
+- Any CJK occurring only after the log's 130-character diagnostic preview could not be
+  read literally. Reusable structural rules were used to cover the corresponding full
+  runtime strings where their pattern was recoverable.
