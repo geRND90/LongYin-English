@@ -313,7 +313,7 @@ Improve defense战时	During defensive battles, improve
 进行constructing	start construction
 constructing/UpgradeBuilding	construct/upgrade Buildings
 Treasure辨别能力	Treasure appraisal ability
-New Jianghu Rumor: <color=#FD1430>仙木灵果</color>	New Jianghu Rumor: <color=#FD1430>Immortal Wood Spirit Fruit</color>
+New Jianghu Rumor: <color=#FD1430>仙木灵果</color>	New Jianghu Rumor: <color=#FD1430>Immortal Spirit Fruit</color>
 
 # TEST17 current-session hybrid plot cleanup
 Purchase库存	Purchase Stock
@@ -733,6 +733,147 @@ Level 七	Level 7
 Level 八	Level 8
 Level 九	Level 9
 Level 十	Level 10
+
+# TEST44 context-safe Chinese numeral normalization
+(Already learned Chapter 零 Repeat)	(Already learned at Layer 0)
+(Already learned Chapter 一 Repeat)	(Already learned at Layer 1)
+(Already learned Chapter 二 Repeat)	(Already learned at Layer 2)
+(Already learned Chapter 三 Repeat)	(Already learned at Layer 3)
+(Already learned Chapter 四 Repeat)	(Already learned at Layer 4)
+(Already learned Chapter 五 Repeat)	(Already learned at Layer 5)
+(Already learned Chapter 六 Repeat)	(Already learned at Layer 6)
+(Already learned Chapter 七 Repeat)	(Already learned at Layer 7)
+(Already learned Chapter 八 Repeat)	(Already learned at Layer 8)
+(Already learned Chapter 九 Repeat)	(Already learned at Layer 9)
+(Already learned Chapter 十 Repeat)	(Already learned at Layer 10)
+Chapter 零 Repeat	Layer 0
+Chapter 一 Repeat	Layer 1
+Chapter 二 Repeat	Layer 2
+Chapter 三 Repeat	Layer 3
+Chapter 四 Repeat	Layer 4
+Chapter 五 Repeat	Layer 5
+Chapter 六 Repeat	Layer 6
+Chapter 七 Repeat	Layer 7
+Chapter 八 Repeat	Layer 8
+Chapter 九 Repeat	Layer 9
+Chapter 十 Repeat	Layer 10
+Chapter 零 Layer	Layer 0
+Chapter 一 Layer	Layer 1
+Chapter 二 Layer	Layer 2
+Chapter 三 Layer	Layer 3
+Chapter 四 Layer	Layer 4
+Chapter 五 Layer	Layer 5
+Chapter 六 Layer	Layer 6
+Chapter 七 Layer	Layer 7
+Chapter 八 Layer	Layer 8
+Chapter 九 Layer	Layer 9
+Chapter 十 Layer	Layer 10
+Layer 零	Layer 0
+Layer 一	Layer 1
+Layer 二	Layer 2
+Layer 三	Layer 3
+Layer 四	Layer 4
+Layer 五	Layer 5
+Layer 六	Layer 6
+Layer 七	Layer 7
+Layer 八	Layer 8
+Layer 九	Layer 9
+Layer 十	Layer 10
+Chapter 零	Chapter 0
+Chapter 一	Chapter 1
+Chapter 二	Chapter 2
+Chapter 三	Chapter 3
+Chapter 四	Chapter 4
+Chapter 五	Chapter 5
+Chapter 六	Chapter 6
+Chapter 七	Chapter 7
+Chapter 八	Chapter 8
+Chapter 九	Chapter 9
+Chapter 十	Chapter 10
+Round 零	Round 0
+Round 一	Round 1
+Round 二	Round 2
+Round 三	Round 3
+Round 四	Round 4
+Round 五	Round 5
+Round 六	Round 6
+Round 七	Round 7
+Round 八	Round 8
+Round 九	Round 9
+Round 十	Round 10
+Rank 零	Rank 0
+Rank 一	Rank 1
+Rank 二	Rank 2
+Rank 三	Rank 3
+Rank 四	Rank 4
+Rank 五	Rank 5
+Rank 六	Rank 6
+Rank 七	Rank 7
+Rank 八	Rank 8
+Rank 九	Rank 9
+Rank 十	Rank 10
+Item 零	Item 0
+Item 一	Item 1
+Item 二	Item 2
+Item 三	Item 3
+Item 四	Item 4
+Item 五	Item 5
+Item 六	Item 6
+Item 七	Item 7
+Item 八	Item 8
+Item 九	Item 9
+Item 十	Item 10
+Auction item 零	Auction item 0
+Auction item 一	Auction item 1
+Auction item 二	Auction item 2
+Auction item 三	Auction item 3
+Auction item 四	Auction item 4
+Auction item 五	Auction item 5
+Auction item 六	Auction item 6
+Auction item 七	Auction item 7
+Auction item 八	Auction item 8
+Auction item 九	Auction item 9
+Auction item 十	Auction item 10
+零 Level	Level 0
+Level 零	Level 0
+
+# TEST44 canonical cleanup for recurring latest-log English fragments
+New legends of the Jianghu	New Jianghu Rumor
+New legends of the Jianghu：	New Jianghu Rumor:
+New Jianghu Rumor：	New Jianghu Rumor:
+Immortal Wood Spirit Fruit	Immortal Spirit Fruit
+Xianmu Spirit Fruit	Immortal Spirit Fruit
+RumorFive Poisons Sect	Rumor: Five Poisons Sect
+RumorSword Forging Villa	Rumor: Sword Forging Villa
+RumorFlying Dragon Sect	Rumor: Flying Dragon Sect
+RumorShaolin Temple	Rumor: Shaolin Temple
+RumorDayin Pavilion	Rumor: Dayin Pavilion
+RumorVajra Esoteric Sect	Rumor: Vajra Esoteric Sect
+RumorMaoshan Sect	Rumor: Maoshan Sect
+RumorQingcheng Sect	Rumor: Qingcheng Sect
+RumorEmei Sect	Rumor: Emei Sect
+RumorThunderclap Hall	Rumor: Thunderclap Hall
+RumorIron Palm Gang	Rumor: Iron Palm Gang
+RumorYaowang Valley	Rumor: Yaowang Valley
+RumorPenglai Sect	Rumor: Penglai Sect
+RumorGolden Dragon Gang	Rumor: Golden Dragon Gang
+RumorWudang Sect	Rumor: Wudang Sect
+RumorTang Sect	Rumor: Tang Sect
+RumorYama Palace	Rumor: Yama Palace
+RumorTianshan Sect	Rumor: Tianshan Sect
+RumorBeggars Sect	Rumor: Beggars Sect
+RumorHaisha Gang	Rumor: Haisha Gang
+RumorBagua Sect	Rumor: Bagua Sect
+RumorShenji Sect	Rumor: Shenji Sect
+RumorGiant Whale Gang	Rumor: Giant Whale Gang
+RumorFuniu Sect	Rumor: Funiu Sect
+RumorKongtong Sect	Rumor: Kongtong Sect
+RumorBadao Sect	Rumor: Badao Sect
+Jinyangheld a	Jinyang held a
+Jianglingheld a	Jiangling held a
+Jiangling Of Ancient Literature End 风靡 Ok	Ancient Literature is no longer in vogue in Jiangling
+Lingtai Villagesouththere	south of Lingtai Village, there
+Strange Flowergrowing	Strange Flower growing
 第1place	1st Place
 第2place	2nd Place
 第3place	3rd Place

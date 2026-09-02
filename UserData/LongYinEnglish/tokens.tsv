@@ -12002,3 +12002,31 @@ Confirm that it takes1 daysPractice 	Spend 1 day practicing
 Confirm that it takes2 daysPractice 	Spend 2 days practicing 
 Approximately needs 	Estimated time: 
 Heavenly time	days
+
+# TEST44 latest-log safe reusable mixed-output cleanup
+仙木灵果	Immortal Spirit Fruit
+Brimming气血	replenishing Health
+Recruiting disciples Task 和这2000 taelsFunds	Recruit Disciples quest and these 2,000 taels of funding
+营造壁垒，以防敌袭。	fortify the position to guard against enemy attacks.
+Government Office已派出重兵前去捉拿	the authorities have sent a large force to capture them
+是Junior Brother Jin啊	Ah, Junior Brother Jin,
+Junior Sister Shao你语无伦次，and making no sense	Junior Sister Shao, you're rambling incoherently and making no sense
+我看是Senior Sister Yu你有问题吧	I think you're the one with the problem, Senior Sister Yu
+every November1 day乃Sect Leaders' Assemblywhen it is convened	The Sect Leaders' Assembly is held on November 1 each year
+hereRenovatedefensive fortifications，营造壁垒，以防敌袭。 in BranchRenovate Several days?	How many days should we spend repairing and fortifying the Branch defenses against enemy attacks?
+，并 obtained	, and obtained
+
+# TEST44 procedural NPC names safely observed in generated name slots (3+ CJK characters)
+皇甫新炎	Huangfu Xinyan
+太史哲	Taishi Zhe
+王馨祝	Wang Xinzhu
+宦卿院	Huan Qingyuan
+窦盼芙	Dou Panfu
+扈冶秉	Hu Yebing
+上官达十	Shangguan Dashi
+苏轮侠	Su Lunxia
+屠用广	Tu Yongguang
+狄曳华	Di Yehua
+封辛推	Feng Xintui
+司徒蒙笛	Situ Mengdi
+养蕾夏	Yang Leixia
