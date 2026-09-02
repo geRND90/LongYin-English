@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.8-test46-data
+
+- Imported 59,486 previously uncovered exact translations from the authorized DragonHierOverLlm corpus as low-priority fallbacks.
+- Added 4,387 anchored dynamic rules for `#PlayerName#`, `#TargetInteractName#`, and related hash placeholders.
+- Preserved every existing LongYin-English canonical, token, building, and NPC translation by precedence.
+- Normalized 2,285 imported outputs to established faction, location, and martial-arts terminology before storage.
+- Rejected conflicting, blank, unsafe short, name-context, malformed-placeholder, and foreign-script candidates.
+- Preserved the verified compiled TEST44 DLL; this release changes translation data only.
+- Added reproducible import and audit tools plus source attribution and the authorized source commit.
+- Completed structural, canonical, placeholder, regex, and suspicious-unit audits with no failures.
+
+Full details are available in docs/TEST46_AUDIT.txt.
+
 ## v0.1.8-test45-data
 
 - Processed all 447 unresolved records from Latest(20260902-135825).log.

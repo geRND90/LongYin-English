@@ -1,0 +1,94 @@
+LongYin English translation data wave TEST46
+Release: v0.1.8-test46-data
+Scope: authorized external-corpus import, data only
+Compiled core: verified TEST44 DLL, unchanged
+
+SOURCE AND PERMISSION
+- Source project: https://github.com/joshfreitas1984/DragonHierOverLlm
+- Source commit: b2cbaf32d0c9907f78576bc6340f44afb90af249
+- Imported with the source author's permission, granted to the LongYin-English
+  maintainer through Discord.
+- Attribution and redistribution boundaries are recorded in THIRD_PARTY_NOTICES.md.
+- No raw game asset, original game dump, compiled third-party plugin, or decompiled
+  game source is included in LongYin-English.
+
+IMPORT SCOPE
+- Source YAML files analyzed: 39.
+- Unique external CJK fragments analyzed: 74,047.
+- Existing LongYin-English keys retained unchanged: 11,126 overlaps.
+- New exact low-priority fallbacks: 59,486.
+- New context-anchored hash-placeholder regex rules: 4,387.
+- Imported outputs normalized to established terminology before storage: 2,285.
+- Principal exact coverage additions:
+  - PlotData dialogue and narrative: 48,971 source associations.
+  - Poetry and literary text: 5,008.
+  - Dynamic text: 4,167.
+  - Prefab and other static fields: 2,402 combined.
+  - Hero special dialogue: 221.
+
+PRECEDENCE AND CANONICAL SAFETY
+- canonical.tsv still takes precedence over fallback_exact.tsv.
+- No imported key shadows canonical.tsv or tokens.tsv.
+- Existing building and NPC dictionaries remain unchanged.
+- Names and name parts from NameData/heroNameParts were not added globally.
+- No one-character or two-character CJK fallback was imported.
+- Hash placeholders are captured only by fully anchored rules with literal Chinese
+  context and a trigger of at least three characters.
+- Canonical normalization includes Tang Sect, Flying Dragon Sect, Sword Forging Villa,
+  Yama Palace, Dayin Pavilion, Badao Sect, Shenji Sect, Vajra Esoteric Sect,
+  Alliance of Justice, Haisha Gang, Movement Art, Internal Art, Body Art, Polearm,
+  and Qimen.
+
+REJECTED MATERIAL
+- Comment-key exact entries not loadable by the current TSV format: 1,831. Their safe
+  dynamic forms are covered by the anchored hash-placeholder rule layer where valid.
+- Unsafe short source fragments: 1,456.
+- Name-context candidates: 136.
+- External translation conflicts: 4.
+- Placeholder mismatches: 3.
+- Foreign-script output: 2.
+- Blank translations: 3.
+
+FINAL DATA COUNTS
+- canonical.tsv: 20,769 records.
+- fallback_exact.tsv: 74,831 records.
+- tokens.tsv: 12,019 records.
+- regex.tsv: 9,603 records.
+- aliases.tsv: 980 records.
+- npc_names.tsv: 324 records.
+- npc_surnames.tsv: 435 records.
+- npc_given_chars.tsv: 1,018 records.
+- building_names.tsv: 76 records.
+
+FINAL AUDIT
+- Invalid TSV rows: 0.
+- Duplicate dictionary keys: 0.
+- Duplicate regex pattern+trigger groups: 0.
+- Fallback keys shadowed by canonical: 0.
+- Imported keys shadowed by tokens: 0.
+- Imported outputs retaining CJK: 0.
+- Imported outputs containing unexpected foreign scripts: 0.
+- Imported hash-placeholder mismatches: 0.
+- Imported rich-text tag mismatches: 0.
+- Unsafe imported short CJK keys: 0.
+- Banned external canonical variants: 0.
+- Known bad currency/unit translations: 0.
+- Exact self-referential aliases: 0.
+- Imported regex compile failures: 0.
+- Imported regex replacement-group failures: 0.
+- Imported regex synthetic-match failures: 0.
+- Imported regex trigger buckets: 1,614.
+- Largest imported trigger bucket: 37 rules.
+- Audit result: PASS.
+
+BUILD REQUIREMENT
+- This is a data-only release. No DLL recompilation is required.
+
+PACKAGE VERIFICATION
+- Archive: LongYinEnglish_v0.1.8_TEST46_AUTHORIZED_CORPUS_DATA_WAVE.zip
+- Archive size: 7,046,921 bytes.
+- Archive SHA-256: 62902fbf02912d1b695941260e4d504f699197ed2dcfde36903c705d076dcd89
+- Compiled DLL SHA-256: f82d025fd2fdf80faaf29479daffe14c3d17f357e4f1fb39ddc2360cecb11834
+- The DLL hash matches the verified TEST45 package/TEST44 compiled core.
+- ZIP integrity: PASS.
+- All nine packaged TSV files match the audited repository data byte-for-byte.

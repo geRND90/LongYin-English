@@ -1,0 +1,190 @@
+{
+  "source_repository": "https://github.com/joshfreitas1984/DragonHierOverLlm",
+  "source_commit": "b2cbaf32d0c9907f78576bc6340f44afb90af249",
+  "source_yaml_files": 39,
+  "unique_external_cjk_fragments": 74047,
+  "accepted_exact_fallbacks": 59486,
+  "hash_placeholder_regex_rules": 4387,
+  "canonicalized_during_import": 2285,
+  "rejected": {
+    "already_covered": 11126,
+    "blank": 3,
+    "comment_key": 1831,
+    "external_conflict": 4,
+    "foreign_script": 2,
+    "name_source": 136,
+    "placeholder_mismatch": 3,
+    "short_source": 1456
+  },
+  "accepted_by_source": {
+    "PlotData.csv.yaml": 47830,
+    "dynamicStringsPoetry.txt.yaml": 5008,
+    "dynamicStrings.txt.yaml": 3768,
+    "dumpedPrefabTextFromOtherFields.txt.yaml": 1901,
+    "dumpedPrefabText.txt.yaml": 330,
+    "dynamicStringsFromColumns.txt.yaml": 206,
+    "HeroSpeTalkText.csv.yaml": 191,
+    "dynamicStringsFromStructuredFragments.txt.yaml": 85,
+    "AchievementData.csv.yaml": 78,
+    "ForceData.csv.yaml": 69,
+    "SpeAddDataBase.csv.yaml": 47,
+    "TipsData.csv.yaml": 43,
+    "InnData.csv.yaml": 29,
+    "KungFuData.csv.yaml": 18,
+    "dynamicStringsDrinkQuotes.txt.yaml": 15,
+    "SummonKungFuData.csv.yaml": 12,
+    "AreaData.csv.yaml": 7,
+    "BuildingData.csv.yaml": 6,
+    "SpeHeroData.csv.yaml": 5,
+    "TechDataBase.csv.yaml": 3,
+    "SummonData.csv.yaml": 3,
+    "ResourcePointData.csv.yaml": 2,
+    "HeroNatureTalkText.csv.yaml": 2,
+    "ForceSpeAddDataBase.csv.yaml": 2,
+    "LoveableSpeHero.csv.yaml": 1,
+    "MartialClubData.csv.yaml": 1,
+    "ArmorData.csv.yaml": 1
+  },
+  "largest_accepted_samples": [
+    {
+      "raw": "本游戏以策略玩法为主，玩家可以通过游戏内提供的资源和线索，结合自身长处变得更强，有益于玩家享受游戏乐趣，放松身心。游戏过程中，通过丰富的游戏内容，玩法和剧情等，让玩家身临其境，体会到现实生活中不一样的乐趣。帮助玩家在享受游戏乐趣进行放松与休息后，更好地投入现实中的工作与学习中。",
+      "translated": "The game primarily focuses on strategic play. Players can become stronger by utilizing the resources and clues provided within the game, in conjunction with their own strengths, which enhances their enjoyment and relaxation. Throughout the gameplay, rich content, diverse playstyles, and engaging narratives immerse players, offering unique pleasures different from those in real life. After enjoying the game and taking a break, players can better engage in their real‑life work and studies.",
+      "origins": [
+        "dumpedPrefabText.txt.yaml"
+      ]
+    },
+    {
+      "raw": "本游戏画面为水墨风格，清新淡雅，弘扬我国美学文化。讲述了主角行侠仗义，惩奸除恶，帮助自己的门派发扬光大，造福百姓的故事。游戏中的背景皆为架空，不会与现实混淆。游戏中的玩法多为动脑的策略玩法，没有激烈刺激的战斗画面。游戏内所有内容都遵循相关法律法规。",
+      "translated": "The game features a ink‑wash style graphics, fresh and elegant, upholding the aesthetic culture of our country. It tells the story of the protagonist practicing chivalry to help the innocent and punish villains, aiming to promote his sect's glory and benefit the people. The background settings in the game are all fictional and will not be confused with reality. The gameplay focuses on strategic thinking rather than intense combat scenes. All content within the game adheres to relevant laws and regulations.",
+      "origins": [
+        "dumpedPrefabText.txt.yaml"
+      ]
+    },
+    {
+      "raw": "未满8周岁的用户不能付费购买游戏；8周岁以上的未满16周岁的未成年人用户，不得单次消费超过50元人民币，每月充值消费累计不得超过200元人民币；16周岁以上的未成年人用户，单次消费不得超过100元人民币，每月充值消费累计不得超过400元人民币。",
+      "translated": "Users under 8 years old cannot make in‑game purchases; users aged between 8 and under 16 years old are not allowed to spend more than 50 RMB per transaction, with monthly cumulative spending capped at no more than 200 RMB; users who are 16 years old or older can make single transactions of no more than 100 RMB, with monthly cumulative spending limited to no more than 400 RMB.",
+      "origins": [
+        "dumpedPrefabText.txt.yaml"
+      ]
+    },
+    {
+      "raw": "积累#UpgradeForceLvNeedContributionNum#功绩并习得#UpgradeForceLvNeedSkillNum#门上乘武学后，可在",
+      "translated": "Accumulate #UpgradeForceLvNeedContributionNum# credits and learn #UpgradeForceLvNeedSkillNum# martial arts techniques, after which you can",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "积累#UpgradeForceLvNeedContributionNum#功绩并习得#UpgradeForceLvNeedSkillNum#门基础武学后，可在",
+      "translated": "Accumulate #UpgradeForceLvNeedContributionNum# credits and learn #UpgradeForceLvNeedSkillNum# basic martial arts skills, after which you can",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "积累#UpgradeForceLvNeedContributionNum#功绩并习得#UpgradeForceLvNeedSkillNum#门进阶武学后，可在",
+      "translated": "Accumulate #UpgradeForceLvNeedContributionNum# merit and learn #UpgradeForceLvNeedSkillNum# advanced martial arts, after which you can",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "本游戏仅可在周五、周六、周日和法定节假日每日20时至21时向未成年人提供1小时网络游戏服务，其他时间均不以任何形式向未成年人提供网络游戏服务。",
+      "translated": "This game is only available for minors to play for up to 1 hours of online gaming service from 20 PM to 21 PM on Fridays, Saturdays, Sundays, and public holidays. It will not provide any form of online gaming service to minors at other times.",
+      "origins": [
+        "dumpedPrefabText.txt.yaml"
+      ]
+    },
+    {
+      "raw": "海上交通贸易之重要港口，来往于此的商贾密布，舶船如织，盛况空前，各种来自海外的稀有材料，奇珍异宝，乃至飞禽走兽，皆在此流通买卖，因而时人誉曰",
+      "translated": "A crucial port for maritime trade and commerce, it is bustling with merchants and ships, a scene unprecedented in its grandeur. Various rare materials, exotic treasures, and even flying beasts and land animals all circulate here for trade, earning it the contemporary accolade of",
+      "origins": [
+        "BuildingData.csv.yaml"
+      ]
+    },
+    {
+      "raw": "还望#PlayerName#莫要心灰意冷，终有一天我#TargetForceName#会与#PlayerForceName#一同报仇雪恨！",
+      "translated": "I hope you, #PlayerName#, do not lose heart. One day, the #TargetForceName# will join forces with your #PlayerForceName# to seek revenge!",
+      "origins": [
+        "dynamicStrings.txt.yaml"
+      ]
+    },
+    {
+      "raw": "不论身世如何，姓名如何，我也会以#SourceForceDescribe##$SourceInteractName#之身生活下去，",
+      "translated": "No matter my background or name, I will live on as #SourceForceDescribe##$SourceInteractName#.",
+      "origins": [
+        "PlotData.csv.yaml"
+      ]
+    },
+    {
+      "raw": "这位是#PlotTargetInteractDescribe1##PlotTargetInteractName1#，也是我的好友，",
+      "translated": "This is #PlotTargetInteractDescribe1##PlotTargetInteractName1#, also one of my good friends.",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "追上这狗贼。我想到个绝妙的捉贼之策，只是还缺两位帮手。望#PlayerName#与添翼兄一道前来相助，合咱们三人之力定能一举擒贼！",
+      "translated": "Catch this dog thief. I've come up with a brilliant plan to catch him, but I still need two helpers. I hope #PlayerName# and Brother Tianyi can join us to help out. With the three of us, we're sure to catch the thief in one go!",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "疫病横行，屡治不止，我与阮芷正在追查传染源头，似乎与黑道五鬼迟百城有关。还望#PlayerName#前来，同我等一道阻止其恶行！",
+      "translated": "Pandemics raging unchecked, despite repeated efforts to contain them, Ruan Zhi and I are currently tracking the source of infection, which seems to be associated with Black Organization's Five Ghosts Bai Bicheng. I hope #PlayerName# will come and help us stop their evil deeds!",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "你们其他弟子若皆以#$SourceInteractName#为榜样，我#TargetForceName#又何愁不能武林称雄呢？",
+      "translated": "If all my other disciples take #$SourceInteractName# as an example, why should I worry about not being able to dominate the Wulin, #TargetForceName#?",
+      "origins": [
+        "dynamicStrings.txt.yaml"
+      ]
+    },
+    {
+      "raw": "传闻因#PlayerForceDescribe##$PlayerName#于小诸葛叛乱中护驾有功，当今圣上已特许其入宫查案。",
+      "translated": "Rumors have it that #PlayerForceDescribe##$PlayerName# earned special permission from the current emperor to investigate cases in the palace for his heroic protection of the emperor during the Xiao Zhu Ge Rebellion.",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "内举行花车游巡。届时卢玉麟会趁机下手，暗害长乐帮主乐无疾。还望你率领#PlayerForceName#精锐，前来阻止其阴谋。",
+      "translated": "An elaborate flower parade will take place within the city. Lu Yulin intends to take this opportunity to strike secretly and harm Sect Master Yue Wuji of the Changle Gang. We hope you will lead your elite #PlayerForceName# forces to prevent his plot.",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "我前几日得了这件#PlotInteractItemName#，若#SourceInteractName#不嫌弃，请一定收下。",
+      "translated": "I got this #PlotInteractItemName# a few days ago. If #SourceInteractName# doesn't mind, please accept it.",
+      "origins": [
+        "dynamicStrings.txt.yaml"
+      ]
+    },
+    {
+      "raw": "这#PlotInteractItemName#请你收下，以表我#$TargetInteractName#化干戈为玉帛之诚意。",
+      "translated": "This #PlotInteractItemName# is offered to you as a token of my #$TargetInteractName# intent to turn swords into plowshares.",
+      "origins": [
+        "dynamicStrings.txt.yaml"
+      ]
+    },
+    {
+      "raw": "（#PlotTargetInteractName0#这家伙，估计是想要赖账不还了，只是不知该如何打发这个债主啊......）",
+      "translated": "(#PlotTargetInteractName0# This guy is probably trying to avoid paying his debt, but I wonder how I should deal with this creditor...)",
+      "origins": [
+        "dumpedPrefabTextFromOtherFields.txt.yaml"
+      ]
+    },
+    {
+      "raw": "只是#SourceInteractName#这般上门讨债，着实有些拂了我#$TargetInteractName#的脸面。",
+      "translated": "Just coming here to demand payment like this #SourceInteractName# has genuinely offended my #$TargetInteractName#'s dignity.",
+      "origins": [
+        "dynamicStrings.txt.yaml"
+      ]
+    }
+  ]
+}
