@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(LongYinEnglish.MainMod), "LongYin English Core", "0.1.8-test42", "OpenAI")]
+[assembly: MelonInfo(typeof(LongYinEnglish.MainMod), "LongYin English Core", "0.1.8-test44", "OpenAI")]
 [assembly: MelonGame("TppStudio", "LongYinLiZhiZhuan")]
 
 namespace LongYinEnglish
@@ -132,11 +132,11 @@ namespace LongYinEnglish
                 TryPatchTextType("UnityEngine.UI.Text", null);
                 TryPatchTextType("TMPro.TMP_Text", "Unity.TextMeshPro");
 
-                MelonLogger.Msg("LongYin English Core 0.1.8-test42 loaded.");
+                MelonLogger.Msg("LongYin English Core 0.1.8-test44 loaded.");
                 MelonLogger.Msg("Canonical data: " + exactCount + " exact, " + tokenCount + " safe token, " + fallbackCount + " fallback exact, " + regexCount + " regex, " + aliasCount + " English aliases, " + buildingCount + " canonical building names, " + npcNameCount + " explicit NPC names, " + npcSurnameCount + " NameData surnames, " + npcGivenCount + " NameData given-name syllables.");
                 MelonLogger.Msg("Global UI types patched now: " + PatchedTypes.Count + ". TMP will be retried automatically if its wrapper loads later.");
                 MelonLogger.Msg("Unresolved capture limit: " + UnresolvedLimit + " unique entries per session.");
-                MelonLogger.Msg("TEST42 safety mode: TEST38/40 performance protections preserved; latest unresolved mixed-output cleanup is context-scoped, NPC display romanization is strengthened, and canonical terminology remains normalized at display time.");
+                MelonLogger.Msg("TEST44 safety mode: TEST38/40 performance protections preserved; latest unresolved mixed-output cleanup is context-scoped, NPC display romanization is strengthened, and canonical terminology remains normalized at display time.");
                 MelonLogger.Msg(_resizerEnabled
                     ? "DragonHier-style YAML resizer ENABLED: " + resizerCount + " rule(s). Baseline/idempotent mode prevents cumulative shrinking; prefab-suffix matching enabled; map/building labels use stable parent-anchored correction; inventory item names use icon-safe late translation; building action labels are additionally enforced by the separate Building Actions Native Labels mod; the core keeps its compatibility fallback enabled."
                     : "DragonHier-style YAML resizer disabled: no YAML rules found.");
