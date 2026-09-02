@@ -18,9 +18,9 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       RELEASE_TAG: v0.1.8-test46-data
       RELEASE_NAME: LongYin English v0.1.8-test46-data
-      SOURCE_ASSET: TEST46_SOURCE_UPDATE.zip
+      SOURCE_ASSET: TEST46_SOURCE_UPDATE_FIXED.zip
       FINAL_ASSET: LongYinEnglish_v0.1.8_TEST46_AUTHORIZED_CORPUS_DATA_WAVE.zip
-      SOURCE_SHA256: d113844881ac764be4c4610708ec6a893e5a7c21ef1d705f9d2ffb49692e1bee
+      SOURCE_SHA256: 85a3b5c885af671a3ac0c5c5eb9e242dc285b31b45811e638e48147e4b21e04c
       FINAL_SHA256: 62902fbf02912d1b695941260e4d504f699197ed2dcfde36903c705d076dcd89
       FINAL_SIZE: "7046921"
 
@@ -37,7 +37,7 @@ jobs:
           set -euo pipefail
           release_id="$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '.[] | select(.tag_name == "v0.1.8-test46-data" and .draft == true) | .id' | head -n 1)"
           test -n "$release_id"
-          source_asset_id="$(gh api "repos/$GITHUB_REPOSITORY/releases/$release_id/assets?per_page=100" --jq '.[] | select(.name == "TEST46_SOURCE_UPDATE.zip") | .id' | head -n 1)"
+          source_asset_id="$(gh api "repos/$GITHUB_REPOSITORY/releases/$release_id/assets?per_page=100" --jq '.[] | select(.name == "TEST46_SOURCE_UPDATE_FIXED.zip") | .id' | head -n 1)"
           final_asset_id="$(gh api "repos/$GITHUB_REPOSITORY/releases/$release_id/assets?per_page=100" --jq '.[] | select(.name == "LongYinEnglish_v0.1.8_TEST46_AUTHORIZED_CORPUS_DATA_WAVE.zip") | .id' | head -n 1)"
           test -n "$source_asset_id"
           test -n "$final_asset_id"
@@ -97,7 +97,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api --method DELETE "repos/$GITHUB_REPOSITORY/releases/assets/${{ steps.release.outputs.source_asset_id }}"
+          mapfile -t temp_asset_ids < <(gh api "repos/$GITHUB_REPOSITORY/releases/${{ steps.release.outputs.release_id }}/assets?per_page=100" --jq '.[] | select(.name | startswith("TEST46_SOURCE_UPDATE")) | .id')
+          test "${#temp_asset_ids[@]}" -ge 1
+          for asset_id in "${temp_asset_ids[@]}"; do
+            gh api --method DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$asset_id"
+          done
           if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$RELEASE_TAG" >/dev/null 2>&1; then
             gh api --method PATCH "repos/$GITHUB_REPOSITORY/git/refs/tags/$RELEASE_TAG" -f sha="$target_sha" -F force=true >/dev/null
           else
