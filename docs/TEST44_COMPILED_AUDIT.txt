@@ -30,9 +30,12 @@ PACKAGE CONTENT
 
 FINAL PACKAGE VERIFICATION
 - Archive: LongYinEnglish_v0.1.8_TEST44_COMPILED_NUMERIC_LAYERS_212_CANONICAL_DATA_WAVE.zip
-- Archive SHA-256: e477f9d2ef22b862cdcf923c91284ec7cae4edde9424f3d62abe5ce2151811cf
-- Archive entries: 12 installable files; directory records and variable ZIP metadata
-  were omitted to make the package reproducible.
+- Local audit archive SHA-256: e477f9d2ef22b862cdcf923c91284ec7cae4edde9424f3d62abe5ce2151811cf
+- Published GitHub asset SHA-256: f68c13a4bb6ddb2fa114ccc097f7c55887efa0514b0231d0435fa41eb0294ed1
+- Published GitHub asset size: 3,455,932 bytes.
+- Archive entries: 12 installable files; directory records and variable extra ZIP
+  metadata were omitted. Container hashes may differ between ZIP implementations,
+  while every internal file is verified independently.
 - Unsafe or traversal paths: 0.
 - Refs/dependency files: 0.
 - ZIP integrity test: passed.
