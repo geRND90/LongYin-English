@@ -1,0 +1,98 @@
+name: Publish TEST44 final asset
+
+on:
+  push:
+    paths:
+      - ".github/workflows/publish-test44-final.yml"
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publish-test44-final
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.event_name == 'push' || github.event.issue.title == '[release] publish TEST44 final'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: v0.1.8-test44-data
+      ASSET: LongYinEnglish_v0.1.8_TEST44_NUMERIC_LAYERS_212_CANONICAL_DATA_WAVE.zip
+      BASE_ASSET: LongYinEnglish_v0.1.8_TEST43_LATEST_628_CANONICAL_DATA_WAVE.zip
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify committed TEST44 data
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum -c <<'HASHES'
+          59f40567e784c9bd3e969b5bc8bbab3b806e40261fa1df0ef84f61d2e2eb96fe  UserData/LongYinEnglish/aliases.tsv
+          1fa3f8345ba2868eb0436dbff8b30659cd8d5f82077e32574a817ca7f06aea10  UserData/LongYinEnglish/regex.tsv
+          8c182a099d98db8d6f7ef3aa810bacd66649501031cc76b523f5c552e654d876  UserData/LongYinEnglish/tokens.tsv
+          HASHES
+
+      - name: Build and inspect installable package
+        shell: bash
+        run: |
+          set -euo pipefail
+          base_dir="$(mktemp -d)"
+          package_dir="$(mktemp -d)"
+          gh release download v0.1.8-test43-data --pattern "$BASE_ASSET" --dir "$base_dir"
+          unzip -q "$base_dir/$BASE_ASSET" -d "$package_dir"
+          cp UserData/LongYinEnglish/*.tsv "$package_dir/UserData/LongYinEnglish/"
+          (
+            cd "$package_dir"
+            zip -q -9 -r "$RUNNER_TEMP/$ASSET" Mods UserData
+          )
+          unzip -t "$RUNNER_TEMP/$ASSET" >/dev/null
+          echo "21683a5df19bcc6305a29cc8fb990e26112829f123477a2eb7cb6e315786d5c4  $package_dir/Mods/LongYinEnglish.dll" | sha256sum -c -
+          for file in aliases.tsv regex.tsv tokens.tsv; do
+            cmp "UserData/LongYinEnglish/$file" "$package_dir/UserData/LongYinEnglish/$file"
+          done
+          sha256sum "$RUNNER_TEMP/$ASSET"
+
+      - name: Publish GitHub prerelease
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; refusing to overwrite it." >&2
+            exit 1
+          fi
+          gh release create "$TAG" "$RUNNER_TEMP/$ASSET" \
+            --target main \
+            --title "LongYin English v0.1.8-test44-data" \
+            --prerelease \
+            --notes-file - <<'NOTES'
+          TEST44 fixes the Chinese numeral leak in Martial Art progression:
+          - `(Already learned Chapter 一 Repeat)` is now `(Already learned at Layer 1)`.
+          - Layer, Chapter, Rank, Round, item, auction, and Level numerals are normalized contextually from 0-10.
+          - No unsafe global one-character Chinese numeral mappings were added.
+
+          This wave also processes all 212 unresolved entries captured in Latest(20260902-021331).log, expands procedural NPC names and mixed generated text, and preserves the stable TEST42 compiled core.
+
+          See docs/TEST44_AUDIT.txt for the complete audit.
+          NOTES
+
+      - name: Remove temporary publisher workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/publish-test44-final.yml
+          git commit -m "Remove TEST44 publisher workflow"
+          git push origin HEAD:main
+
+      - name: Close trigger issue
+        if: github.event_name == 'issues'
+        shell: bash
+        run: gh issue close "${{ github.event.issue.number }}" --comment "TEST44 was published successfully."
