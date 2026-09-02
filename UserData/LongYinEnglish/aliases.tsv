@@ -386,7 +386,6 @@ Faction间 不可攻击总舵	Sects cannot attack Sect Headquarters
 The sect cannot attack the capital/headquarters.	Sects cannot attack Sect Headquarters
 Breakthrough耗时	Breakthrough Time
 Breakthrough伤势	Breakthrough Injury
-每Martial Arts of each tier都有最佳training count	Each Martial Arts tier has an optimal number of training sessions
 After exceeding this count，Experience Gain将逐次Reduce	After exceeding this count, Experience Gain decreases each time
 
 # TEST21 normalization aliases
@@ -1001,3 +1000,46 @@ Official disciple robe	Core Disciple Daoist Robe
 Personal disciple's robe	Prime Disciple Daoist Robe
 Beginner's robe	Inner Disciple Daoist Robe
 External disciple robe	Outer Disciple Daoist Robe
+
+# TEST45 late mixed-output cleanup
+Recruiting disciples Task 和这2000 taelsFunds	Recruit Disciples quest and these 2,000 taels of funding
+<b>Recruiting disciples</b> Task 和这2000 taelsFunds	<b>Recruit Disciples</b> quest and these 2,000 taels of funding
+Disciple，	Disciple,
+，并 obtained	, and obtained
+Brother Gong与我一见如故，颇为投缘。	Brother Gong, we hit it off immediately and get along very well.
+今天我就传你这门	Today I will teach you this 
+，日后行走Jianghu也好作防身应急之用。	, so it can serve you for self-defense in emergencies as you travel the Jianghu.
+Zhangqiu Towneast有Immortal Spirit Fruitgrowing	east of Zhangqiu Town, Immortal Spirit Fruit is growing
+♦Scripture PavilionManual可Increase Sect所有DisciplesTraining该Martial Arts Speed。	♦A manual in the Scripture Pavilion increases the training speed of that Martial Art for all Sect disciples.
+每Martial Arts of each tier都有最佳training count	Each Martial Art tier has an optimal number of training sessions
+RumorChangle Gang	Rumor: Changle Gang
+RumorAlliance of Justice	Rumor: Alliance of Justice
+长孙Win凤	Zhangsun Yingfeng
+得到一枚灵果	obtained a Spirit Fruit
+Baling Village Of Chess Manuals End 风靡 Ok	Chess Manuals are no longer in vogue in Baling Village
+I've been lately 欲寻人协助鉴宝, If Disciple has some free time, I hope you can come Xianxia Sect Dine with me for a while	I have recently been looking for someone to help appraise treasures. If you have time, Disciple, please come to the Xianxia Sect and join me for a meal.
+Help 吕境 with one arm	Give Lu Jing a hand
+钦女侠	Heroine Qin
+Ma Baoguo: Jin WooMartial Arts着实formidable，\n我Ma Baoguo技不如人，听凭处置！	Ma Baoguo: Jin Woo, your Martial Arts are truly formidable.\nI, Ma Baoguo, was outmatched. Do with me as you please!
+Ma Baoguo: Jin Woo？咱们之间还有往日冤仇未解。\n我与你无话可说，快滚吧！	Ma Baoguo: Jin Woo? Our old grudge remains unsettled.\nI have nothing to say to you. Get lost!
+隆晗尺？	Long Hanchi?
+Oversees the governed towns’ Population事宜	Oversees Population in governed towns
+Oversees the governed towns’ Public Opinion事宜	Oversees Public Opinion in governed towns
+Oversees the governed towns’ Defense事宜	Oversees Defense in governed towns
+Oversees the governed towns’ Security事宜	Oversees Security in governed towns
+Increase officeholderAlchemy Experience	Increases the officeholder's Alchemy Experience
+Increase officeholderCooking Experience	Increases the officeholder's Cooking Experience
+Increase officeholderGathering Experience	Increases the officeholder's Gathering Experience
+Increase officeholderForging Experience	Increases the officeholder's Forging Experience
+OverseesSectmedicine and recuperation	Oversees Sect medicine and recuperation
+Increase officeholderMedicine/Poison Experience	Increases the officeholder's Medicine/Poison Experience
+Sect Leader’s right-hand aide，OverseesSectintelligence gathering	The Sect Leader's right-hand aide, overseeing Sect intelligence gathering
+Increase officeholderAgilityWillpowerMeridians	Increases the officeholder's Agility, Willpower, and Meridians
+Experience113/405	Experience 113/405
+Experience8/435	Experience 8/435
+Increase FistDamage	Increase Fist Damage
+Reduce receivedFistDamage	Reduce received Fist Damage
+UpgradeSectMain Hall	upgrading the Sect Main Hall
+Banqiao Townwest	west of Banqiao Town
+year，the majorSect Leaderhave now gathered in	year. The major Sect Leaders have now gathered in 
+</b>in the cityto	</b> to 

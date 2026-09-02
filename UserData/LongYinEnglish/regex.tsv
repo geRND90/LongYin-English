@@ -5259,3 +5259,22 @@ Rumor有一伙山贼流寇躲藏于<b>(?<place>[A-Za-z][A-Za-z ]*?)(?<dir>north|
 ^(?<p1>[\s\S]*?)Faction Quests?\nRecruit(?<p2>[0-9]+)名(?<p3><color=[^>]+>.+?</color>)(?<p4>[\s\S]*)$	${p1}Sect Quest\nRecruit ${p2} ${p3}${p4}	名
 ^(?<p1><color=[^>]+>[^<]+</color>) 触发了(?<p2>[\s\S]+)$	${p1} triggered ${p2}	触发了
 ^(?<p1><color=[^>]+>[^<]+</color>) 激活(?<p2>[\s\S]+)$	${p1} activated ${p2}	激活
+
+# TEST45 short procedural names: translate only after a rich-text rank or promotion marker
+(?<prefix>(?:</color>\s+|will\s+))蓬珂(?=\s)	${prefix}Peng Ke	蓬珂
+(?<prefix>(?:</color>\s+|will\s+))家推(?=\s)	${prefix}Jia Tui	家推
+(?<prefix>(?:</color>\s+|will\s+))孙始(?=\s)	${prefix}Sun Shi	孙始
+(?<prefix>(?:</color>\s+|will\s+))益蕾(?=\s)	${prefix}Yi Lei	益蕾
+(?<prefix>(?:</color>\s+|will\s+))康眉(?=\s)	${prefix}Kang Mei	康眉
+(?<prefix>(?:</color>\s+|will\s+))黄芸(?=\s)	${prefix}Huang Yun	黄芸
+(?<prefix>(?:</color>\s+|will\s+))冀朵(?=\s)	${prefix}Ji Duo	冀朵
+(?<prefix>(?:</color>\s+|will\s+))季剑(?=\s)	${prefix}Ji Jian	季剑
+(?<prefix>(?:</color>\s+|will\s+))伊豪(?=\s)	${prefix}Yi Hao	伊豪
+(?<prefix>(?:</color>\s+|will\s+))薛曲(?=\s)	${prefix}Xue Qu	薛曲
+(?<prefix>(?:</color>\s+|will\s+))能邦(?=\s)	${prefix}Neng Bang	能邦
+(?<prefix>(?:</color>\s+|will\s+))戎军(?=\s)	${prefix}Rong Jun	戎军
+(?<prefix>(?:</color>\s+|will\s+))伏冶(?=\s)	${prefix}Fu Ye	伏冶
+(?<prefix>(?:</color>\s+|will\s+))和柳(?=\s)	${prefix}He Liu	和柳
+(?<prefix>(?:</color>\s+|will\s+))狄雪(?=\s)	${prefix}Di Xue	狄雪
+(?<prefix>(?:</color>\s+|will\s+))吕境(?=\s)	${prefix}Lu Jing	吕境
+(?<prefix></color>\s+)伊豪(?=has\b)	${prefix}Yi Hao 	伊豪
