@@ -1,0 +1,135 @@
+name: Publish TEST45 data release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-test45.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-test45-data
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply and audit TEST45 translation data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git apply --check .github/test45-data.patch
+          git apply .github/test45-data.patch
+
+          for f in canonical.tsv tokens.tsv fallback_exact.tsv aliases.tsv building_names.tsv npc_names.tsv npc_surnames.tsv npc_given_chars.tsv; do
+            p="UserData/LongYinEnglish/$f"
+            test "$(awk -F '\t' '!/^#/ && NF!=0 && NF!=2 {n++} END{print n+0}' "$p")" -eq 0
+            test "$(awk -F '\t' '!/^#/ && NF>=2 {print $1}' "$p" | sort | uniq -d | wc -l)" -eq 0
+          done
+          p=UserData/LongYinEnglish/regex.tsv
+          test "$(awk -F '\t' '!/^#/ && NF!=0 && NF!=3 {n++} END{print n+0}' "$p")" -eq 0
+          test "$(awk -F '\t' '!/^#/ && NF>=3 {print $1 "\t" $3}' "$p" | sort | uniq -d | wc -l)" -eq 0
+          test "$(comm -12 <(awk -F '\t' '!/^#/ && NF>=2 {print $1}' UserData/LongYinEnglish/canonical.tsv | sort -u) <(awk -F '\t' '!/^#/ && NF>=2 {print $1}' UserData/LongYinEnglish/fallback_exact.tsv | sort -u) | wc -l)" -eq 0
+          test "$(awk -F '\t' '!/^#/ && NF>=2 && $1==$2 {n++} END{print n+0}' UserData/LongYinEnglish/aliases.tsv)" -eq 0
+
+          sha256sum -c <<'HASHES'
+          4c96f078843b12bcf12f2a167efa40076199c21322c49ee68d2f2d68731c2492  UserData/LongYinEnglish/aliases.tsv
+          4fa84c98a3ccda69f2f7a3c3624c850cc4523ecd9337c29b2a75bbbefe1ca3fe  UserData/LongYinEnglish/building_names.tsv
+          2c6475c9770dc7cbb7beb5698813b0fb964708dd83b3397029eabe69d184bcfd  UserData/LongYinEnglish/canonical.tsv
+          f03a0c8956b68260de1853a6e1621d3ad74dd4527bd4008791109ba8dc524ac6  UserData/LongYinEnglish/fallback_exact.tsv
+          6c2226612d94bc1339d88ba6ebaf29b54aec0920fb4cd883423e64be7220bbc9  UserData/LongYinEnglish/npc_given_chars.tsv
+          203e7cb709aa7bd1d5abb7239a6ac380a9fc33709f515274e9d741483b2a78a5  UserData/LongYinEnglish/npc_names.tsv
+          240d58f45da1632bbd93276b5d9c46b9617c321699140832b2f91f2708a77c9e  UserData/LongYinEnglish/npc_surnames.tsv
+          3cea20b51da3094bf30857d51b099d2c6ac8b2ea01fbd4b1849d75c161430238  UserData/LongYinEnglish/regex.tsv
+          9c12cc1ef2a7dcf9576ebc32f1dba60cbf0f682115abc52a3817cd335dee1008  UserData/LongYinEnglish/tokens.tsv
+          HASHES
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add UserData/LongYinEnglish
+          git commit -m 'Add TEST45 latest 447 canonical data wave'
+          git push origin HEAD:main
+
+      - name: Build and verify installable package
+        id: package
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag=v0.1.8-test45-data
+          asset=LongYinEnglish_v0.1.8_TEST45_LATEST_447_CANONICAL_DATA_WAVE.zip
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $tag already exists" >&2
+            exit 1
+          fi
+
+          work="$(mktemp -d)"
+          gh release download v0.1.8-test44 --repo "$GITHUB_REPOSITORY" --pattern 'LongYinEnglish_v0.1.8_TEST44_COMPILED_NUMERIC_LAYERS_212_CANONICAL_WAVE.zip' --dir "$work"
+          unzip -q "$work/LongYinEnglish_v0.1.8_TEST44_COMPILED_NUMERIC_LAYERS_212_CANONICAL_WAVE.zip" -d "$work/stage"
+          cp UserData/LongYinEnglish/*.tsv "$work/stage/UserData/LongYinEnglish/"
+          find "$work/stage" -type f -exec touch -t 200001011100 {} +
+          (cd "$work/stage" && find Mods UserData -type f -print | LC_ALL=C sort | zip -X -q "$RUNNER_TEMP/$asset" -@)
+
+          unzip -t "$RUNNER_TEMP/$asset"
+          test "$(unzip -Z1 "$RUNNER_TEMP/$asset" | wc -l)" -eq 12
+          if unzip -Z1 "$RUNNER_TEMP/$asset" | grep -Eqi '(^|/)(refs|0harmony|melonloader)'; then
+            echo 'Dependency files leaked into installable package' >&2
+            exit 1
+          fi
+          test "$(unzip -p "$RUNNER_TEMP/$asset" Mods/LongYinEnglish.dll | sha256sum | cut -d' ' -f1)" = f82d025fd2fdf80faaf29479daffe14c3d17f357e4f1fb39ddc2360cecb11834
+          package_sha="$(sha256sum "$RUNNER_TEMP/$asset" | cut -d' ' -f1)"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "asset=$asset" >> "$GITHUB_OUTPUT"
+          echo "package_sha=$package_sha" >> "$GITHUB_OUTPUT"
+
+      - name: Remove temporary publisher and create clean release target
+        id: target
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/test45-data.patch .github/workflows/publish-test45.yml
+          git commit -m 'Remove temporary TEST45 publisher'
+          git push origin HEAD:main
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Publish and verify GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.package.outputs.tag }}
+          ASSET: ${{ steps.package.outputs.asset }}
+          PACKAGE_SHA: ${{ steps.package.outputs.package_sha }}
+          TARGET_SHA: ${{ steps.target.outputs.sha }}
+        run: |
+          set -euo pipefail
+          notes="$RUNNER_TEMP/TEST45_RELEASE_NOTES.md"
+          cat > "$notes" <<'NOTES'
+          Translation-data-only update built on the verified compiled TEST44 core.
+
+          Highlights:
+          - Processes all 447 unresolved records from Latest(20260902-135825).log.
+          - Covers every Chinese fragment visible in the 110 readable diagnostic previews.
+          - Adds canonical event titles, procedural NPC names, dialogue, rumors, officeholder text, mail, rewards, and late mixed-output cleanup.
+          - Preserves canonical terminology, numeric Layer handling, and the path-guarded Polearm Research abbreviation.
+          - Does not include Refs, Harmony, MelonLoader, PDB files, or unrelated mods.
+
+          Install by extracting the ZIP into the game root and merging the Mods and UserData folders.
+          NOTES
+
+          gh release create "$TAG" "$RUNNER_TEMP/$ASSET" --repo "$GITHUB_REPOSITORY" --target "$TARGET_SHA" --title 'LongYin English v0.1.8-test45-data' --notes-file "$notes" --prerelease
+          release_json="$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG")"
+          asset_digest="$(jq -r --arg name "$ASSET" '.assets[] | select(.name==$name) | .digest' <<<"$release_json")"
+          asset_size="$(jq -r --arg name "$ASSET" '.assets[] | select(.name==$name) | .size' <<<"$release_json")"
+          test "$asset_digest" = "sha256:$PACKAGE_SHA"
+          test "$asset_size" -gt 3000000
+          echo "Published $TAG with $ASSET ($asset_digest, $asset_size bytes)"
