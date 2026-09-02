@@ -2,13 +2,13 @@
 
 English translation mod for **LongYinLiZhiZhuan**, built with MelonLoader and ModsOfLong.
 
-The project combines canonical terminology, contextual replacements, procedural NPC-name handling, UI text normalization, and safeguards for dynamic text. The current development build is **v0.1.8-test42**.
+The project combines canonical terminology, contextual replacements, procedural NPC-name handling, UI text normalization, and safeguards for dynamic text. The current development build is **v0.1.8-test43-data**.
 
 ## Download
 
 For normal installation, download the compiled package:
 
-**[LongYinEnglish v0.1.8-test42](downloads/LongYinEnglish_v0.1.8-test42.zip)**
+**[LongYinEnglish v0.1.8-test43-data](https://github.com/geRND90/LongYin-English/releases/download/v0.1.8-test43-data/LongYinEnglish_v0.1.8_TEST43_LATEST_628_CANONICAL_DATA_WAVE.zip)**
 
 You do not need the source files from the repository.
 
@@ -51,9 +51,9 @@ The installable output is created in `READY/`.
 
 ## Current version
 
-**v0.1.8-test42 — Latest 831 Canonical Wave**
+**v0.1.8-test43-data — Latest 628 Canonical Data Wave**
 
-TEST42 expands coverage from the latest unresolved-text log while preserving the established canonical terminology and the stable TEST38/TEST41 architecture. See [`docs/TEST42_AUDIT.txt`](docs/TEST42_AUDIT.txt) for the detailed audit.
+TEST43 processes the latest 628 unresolved records while preserving the established canonical terminology and the TEST42 compiled core. See [`docs/TEST43_AUDIT.txt`](docs/TEST43_AUDIT.txt) for the detailed audit.
 
 ## Notes
 
