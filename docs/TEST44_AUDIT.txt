@@ -1,0 +1,78 @@
+LongYin English translation data wave TEST44
+Source log: Latest(20260902-021331).log
+Runtime base: LongYin English Core v0.1.8-test42
+
+SCOPE
+- This is a translation-data-only installable update built on the compiled TEST42 core.
+- The source tree also stages a path-guarded Research HUD fix for the standalone 长
+  abbreviation, but that source change is not active until the next verified DLL build.
+- No UI sizing, Building Actions, game files, or unrelated mods were changed.
+- Existing long-history, regex-timeout, and long-string safety protections remain intact.
+
+LATEST LOG
+- Unresolved captured: 212 / 2000.
+- Capture limit was not reached; the complete session was available.
+- Records with visible CJK inside the diagnostic preview: 39.
+- Diagnostic previews truncated at 130 characters: 207.
+- Repeated unresolved BookDetail records strongly exposed the same hidden learned-layer
+  suffix shown in the supplied screenshot.
+
+NUMERIC/LAYER CORRECTION
+- Corrected the learned Martial Art suffix from the malformed
+  "(Already learned Chapter 一 Repeat)" form to "(Already learned at Layer 1)".
+- Martial Arts progression remains canonically formatted as Layer N.
+- Added context-safe conversion of Chinese numerals 0-10 after Layer, Chapter, Rank,
+  Round, Item, Auction item, and Level labels.
+- Corrected legacy regex outputs such as "Chapter N Layer", "Chapter N Repeat",
+  "Name N", "Wheel N", and malformed breakthrough/layer sentences.
+- Corrected the same numeral leak in colored layer labels, Ghost Gate layers,
+  battle-merit ranks, auction items, narrative chapters, and round labels.
+- No global one-character numeral aliases were added; this avoids corrupting NPC names
+  and ordinary Chinese prose.
+
+LATEST-LOG COVERAGE
+- Added 24 safe reusable token translations, including 13 procedural NPC names.
+- Added 8 contextual regex rules: 2 mixed generated-text patterns and 6 guarded short
+  procedural NPC names.
+- Added 137 net aliases for numeric normalization and recurring generated-log cleanup.
+- Corrected the Immortal Spirit Fruit canonical rendering and New Jianghu Rumor label.
+- Expanded mixed dialogue, Research/commission, defensive construction, bandit rumor,
+  manuscript, trade, reward, event, and procedural NPC log handling.
+- Visible CJK fragments in all readable unresolved previews were covered except the
+  deliberately guarded standalone Research abbreviation described below.
+
+CANONICAL LOCKS PRESERVED
+- Tang Sect, Maoshan Sect, Bagua Sect, and Sect.
+- Superior Martial Arts, Secret Martial Arts, Martial Arts Tournament, and Sect Tournament.
+- Assassin Leader, Pao Ding Ox-Carving Blade, Horse Bandit Stronghold, Private School,
+  Quiet Room, Quarry, and Daoist Wenyi.
+- Percentage Combo remains Combo Rate.
+- Pack, Sect Warehouse, Affection, Combat Experience, Theory Experience, and
+  Poisoning terminology remain consistent with the established dictionaries.
+
+FINAL DATA AUDIT
+- canonical.tsv: 20,766 records
+- tokens.tsv: 11,955 records
+- fallback_exact.tsv: 15,347 records
+- regex.tsv: 5,199 records
+- aliases.tsv: 940 records
+- npc_names.tsv: 324 records
+- npc_surnames.tsv: 435 records
+- npc_given_chars.tsv: 1,018 records
+- building_names.tsv: 76 records
+- Duplicate dictionary keys: 0.
+- Duplicate regex pattern+trigger groups: 0.
+- Fallback keys shadowed by canonical: 0.
+- Exact self-referential aliases: 0.
+- Invalid TSV column counts: 0.
+- English numeric labels retaining Chinese numerals: 0.
+- Numeric normalization examples passed for Layer, Chapter, Rank, Round, Auction item,
+  and Level 0-10.
+
+SAFE KNOWN LIMITATION
+- The standalone Research abbreviation 长 remains intentionally untranslated in this
+  installable data-only wave. A global one-character alias could corrupt names and prose.
+  The repository source now maps it to Polearm only on the exact
+  HudPanel/ForceUI/NowResearch/Text path for the next verified DLL build.
+- CJK occurring only after the log's 130-character diagnostic preview could not be read
+  literally. Reusable structural rules cover the recoverable patterns without guessing.
