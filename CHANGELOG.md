@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.8-test44
+
+- Replaced the TEST42 compiled core with the newly compiled TEST44 DLL.
+- Activated the path-guarded `长` → `Polearm` Research HUD abbreviation without adding an unsafe global one-character alias.
+- Aligned the internal MelonInfo, loaded-message, and safety-mode version labels to `0.1.8-test44`.
+- Preserved every audited TEST44 canonical, token, alias, regex, building, and NPC data file byte-for-byte.
+- Excluded the local `Refs` directory, MelonLoader, Harmony, PDB, and build output from the installable package.
+- Verified the DLL, package paths, ZIP integrity, ModsOfLong files, and all TEST44 data hashes.
+
+Full details are available in docs/TEST44_COMPILED_AUDIT.txt.
+
 ## v0.1.8-test44-data
 
 - Corrected `(Already learned Chapter 一 Repeat)` to the canonical `(Already learned at Layer 1)` format.
