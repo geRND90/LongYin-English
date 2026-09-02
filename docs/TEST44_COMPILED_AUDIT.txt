@@ -1,0 +1,47 @@
+LongYin English compiled release TEST44
+Source package supplied by project owner: LongYinEnglish(1).zip
+Release runtime: LongYin English Core v0.1.8-test44
+Canonical data base: TEST44 Numeric Layers / Latest 212 Wave
+
+COMPILED DLL VERIFICATION
+- Incoming ZIP SHA-256: 22ff904e1a9cec76dd2847c88f45fb573fcd7e4fd80132ec4e06310e0d6e9609
+- Incoming compiled DLL SHA-256: 1b6f18f8cd0d045e506fd3a7064afe9dce5aefa774a4376bbf6bd371ca717674
+- The DLL is a valid PE32 Mono/.NET assembly for Windows.
+- The CLR strong-name directory is empty; the assembly is not strong-name signed.
+- The compiled string heap contains Polearm directly in the guarded Research HUD
+  abbreviation block beside Research, Eloquence, and Strength, confirming that the
+  new HudPanel/ForceUI/NowResearch/Text mapping was incorporated.
+- The incoming build still identified itself as v0.1.8-test42. Three equal-length
+  version-label bytes were corrected to v0.1.8-test44: the MelonInfo version, loaded
+  message, and safety-mode message. No executable logic was changed by this correction.
+- Final DLL SHA-256: f82d025fd2fdf80faaf29479daffe14c3d17f357e4f1fb39ddc2360cecb11834
+- Repository source version labels were updated to v0.1.8-test44 to match the release.
+
+PACKAGE CONTENT
+- Mods/LongYinEnglish.dll
+- Mods/ModsOfLong/modLongYinEnglish/Info.json
+- Mods/ModsOfLong/modLongYinEnglish/Data/PlotData.csv
+- Nine audited TSV files under UserData/LongYinEnglish.
+- Refs, MelonLoader.dll, 0Harmony.dll, PDB files, compiler output, and source build
+  directories are not included in the installable package.
+- Exactly one DLL is present: Mods/LongYinEnglish.dll.
+- Info.json and PlotData.csv match the repository versions byte-for-byte.
+- All nine TSV files match the audited TEST44 repository data byte-for-byte.
+
+FINAL PACKAGE VERIFICATION
+- Archive: LongYinEnglish_v0.1.8_TEST44_COMPILED_NUMERIC_LAYERS_212_CANONICAL_DATA_WAVE.zip
+- Archive SHA-256: ba0f6d0314243a7533d9920610b57174f5c9041ccaaa140ef110e835dd3ef0fd
+- Archive entries: 18 including directory records.
+- Unsafe or traversal paths: 0.
+- Refs/dependency files: 0.
+- ZIP integrity test: passed.
+- DLL hash inside ZIP: matched.
+- TEST44 TSV hashes inside ZIP: all matched.
+
+RELEASE BEHAVIOR
+- The Chinese numeral leak in Martial Art progression remains fixed through the
+  TEST44 data rules: "Chapter 一 Repeat" is normalized to "at Layer 1".
+- Layer, Chapter, Rank, Round, item, auction, and Level numerals remain normalized
+  contextually without unsafe global single-character mappings.
+- The standalone Research abbreviation 长 is now translated to Polearm only on the
+  exact guarded Research HUD path by the compiled TEST44 DLL.
