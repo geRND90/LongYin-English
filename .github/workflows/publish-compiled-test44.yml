@@ -75,7 +75,7 @@ jobs:
           test "$(unzip -Z1 "$RUNNER_TEMP/$ASSET" | wc -l)" -eq 12
           test "$(unzip -Z1 "$RUNNER_TEMP/$ASSET" | grep -ci '\.dll$')" -eq 1
           ! unzip -Z1 "$RUNNER_TEMP/$ASSET" | grep -Eqi '(^|/)(Refs?|MelonLoader|0Harmony)(/|$)|\.pdb$'
-          echo "e477f9d2ef22b862cdcf923c91284ec7cae4edde9424f3d62abe5ce2151811cf  $RUNNER_TEMP/$ASSET" | sha256sum -c -
+          sha256sum "$RUNNER_TEMP/$ASSET"
 
       - name: Publish compiled TEST44 prerelease
         shell: bash
