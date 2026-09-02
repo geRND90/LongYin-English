@@ -1,0 +1,328 @@
+--- a/UserData/LongYinEnglish/aliases.tsv
++++ b/UserData/LongYinEnglish/aliases.tsv
+@@ -313,7 +313,7 @@
+ 进行constructing	start construction
+ constructing/UpgradeBuilding	construct/upgrade Buildings
+ Treasure辨别能力	Treasure appraisal ability
+-New Jianghu Rumor: <color=#FD1430>仙木灵果</color>	New Jianghu Rumor: <color=#FD1430>Immortal Wood Spirit Fruit</color>
++New Jianghu Rumor: <color=#FD1430>仙木灵果</color>	New Jianghu Rumor: <color=#FD1430>Immortal Spirit Fruit</color>
+ 
+ # TEST17 current-session hybrid plot cleanup
+ Purchase库存	Purchase Stock
+@@ -733,6 +733,147 @@
+ Level 八	Level 8
+ Level 九	Level 9
+ Level 十	Level 10
++
++# TEST44 context-safe Chinese numeral normalization
++(Already learned Chapter 零 Repeat)	(Already learned at Layer 0)
++(Already learned Chapter 一 Repeat)	(Already learned at Layer 1)
++(Already learned Chapter 二 Repeat)	(Already learned at Layer 2)
++(Already learned Chapter 三 Repeat)	(Already learned at Layer 3)
++(Already learned Chapter 四 Repeat)	(Already learned at Layer 4)
++(Already learned Chapter 五 Repeat)	(Already learned at Layer 5)
++(Already learned Chapter 六 Repeat)	(Already learned at Layer 6)
++(Already learned Chapter 七 Repeat)	(Already learned at Layer 7)
++(Already learned Chapter 八 Repeat)	(Already learned at Layer 8)
++(Already learned Chapter 九 Repeat)	(Already learned at Layer 9)
++(Already learned Chapter 十 Repeat)	(Already learned at Layer 10)
++Chapter 零 Repeat	Layer 0
++Chapter 一 Repeat	Layer 1
++Chapter 二 Repeat	Layer 2
++Chapter 三 Repeat	Layer 3
++Chapter 四 Repeat	Layer 4
++Chapter 五 Repeat	Layer 5
++Chapter 六 Repeat	Layer 6
++Chapter 七 Repeat	Layer 7
++Chapter 八 Repeat	Layer 8
++Chapter 九 Repeat	Layer 9
++Chapter 十 Repeat	Layer 10
++Chapter 零 Layer	Layer 0
++Chapter 一 Layer	Layer 1
++Chapter 二 Layer	Layer 2
++Chapter 三 Layer	Layer 3
++Chapter 四 Layer	Layer 4
++Chapter 五 Layer	Layer 5
++Chapter 六 Layer	Layer 6
++Chapter 七 Layer	Layer 7
++Chapter 八 Layer	Layer 8
++Chapter 九 Layer	Layer 9
++Chapter 十 Layer	Layer 10
++Layer 零	Layer 0
++Layer 一	Layer 1
++Layer 二	Layer 2
++Layer 三	Layer 3
++Layer 四	Layer 4
++Layer 五	Layer 5
++Layer 六	Layer 6
++Layer 七	Layer 7
++Layer 八	Layer 8
++Layer 九	Layer 9
++Layer 十	Layer 10
++Chapter 零	Chapter 0
++Chapter 一	Chapter 1
++Chapter 二	Chapter 2
++Chapter 三	Chapter 3
++Chapter 四	Chapter 4
++Chapter 五	Chapter 5
++Chapter 六	Chapter 6
++Chapter 七	Chapter 7
++Chapter 八	Chapter 8
++Chapter 九	Chapter 9
++Chapter 十	Chapter 10
++Round 零	Round 0
++Round 一	Round 1
++Round 二	Round 2
++Round 三	Round 3
++Round 四	Round 4
++Round 五	Round 5
++Round 六	Round 6
++Round 七	Round 7
++Round 八	Round 8
++Round 九	Round 9
++Round 十	Round 10
++Rank 零	Rank 0
++Rank 一	Rank 1
++Rank 二	Rank 2
++Rank 三	Rank 3
++Rank 四	Rank 4
++Rank 五	Rank 5
++Rank 六	Rank 6
++Rank 七	Rank 7
++Rank 八	Rank 8
++Rank 九	Rank 9
++Rank 十	Rank 10
++Item 零	Item 0
++Item 一	Item 1
++Item 二	Item 2
++Item 三	Item 3
++Item 四	Item 4
++Item 五	Item 5
++Item 六	Item 6
++Item 七	Item 7
++Item 八	Item 8
++Item 九	Item 9
++Item 十	Item 10
++Auction item 零	Auction item 0
++Auction item 一	Auction item 1
++Auction item 二	Auction item 2
++Auction item 三	Auction item 3
++Auction item 四	Auction item 4
++Auction item 五	Auction item 5
++Auction item 六	Auction item 6
++Auction item 七	Auction item 7
++Auction item 八	Auction item 8
++Auction item 九	Auction item 9
++Auction item 十	Auction item 10
++零 Level	Level 0
++Level 零	Level 0
++
++# TEST44 canonical cleanup for recurring latest-log English fragments
++New legends of the Jianghu	New Jianghu Rumor
++New legends of the Jianghu：	New Jianghu Rumor:
++New Jianghu Rumor：	New Jianghu Rumor:
++Immortal Wood Spirit Fruit	Immortal Spirit Fruit
++Xianmu Spirit Fruit	Immortal Spirit Fruit
++RumorFive Poisons Sect	Rumor: Five Poisons Sect
++RumorSword Forging Villa	Rumor: Sword Forging Villa
++RumorFlying Dragon Sect	Rumor: Flying Dragon Sect
++RumorShaolin Temple	Rumor: Shaolin Temple
++RumorDayin Pavilion	Rumor: Dayin Pavilion
++RumorVajra Esoteric Sect	Rumor: Vajra Esoteric Sect
++RumorMaoshan Sect	Rumor: Maoshan Sect
++RumorQingcheng Sect	Rumor: Qingcheng Sect
++RumorEmei Sect	Rumor: Emei Sect
++RumorThunderclap Hall	Rumor: Thunderclap Hall
++RumorIron Palm Gang	Rumor: Iron Palm Gang
++RumorYaowang Valley	Rumor: Yaowang Valley
++RumorPenglai Sect	Rumor: Penglai Sect
++RumorGolden Dragon Gang	Rumor: Golden Dragon Gang
++RumorWudang Sect	Rumor: Wudang Sect
++RumorTang Sect	Rumor: Tang Sect
++RumorYama Palace	Rumor: Yama Palace
++RumorTianshan Sect	Rumor: Tianshan Sect
++RumorBeggars Sect	Rumor: Beggars Sect
++RumorHaisha Gang	Rumor: Haisha Gang
++RumorBagua Sect	Rumor: Bagua Sect
++RumorShenji Sect	Rumor: Shenji Sect
++RumorGiant Whale Gang	Rumor: Giant Whale Gang
++RumorFuniu Sect	Rumor: Funiu Sect
++RumorKongtong Sect	Rumor: Kongtong Sect
++RumorBadao Sect	Rumor: Badao Sect
++Jinyangheld a	Jinyang held a
++Jianglingheld a	Jiangling held a
++Jiangling Of Ancient Literature End 风靡 Ok	Ancient Literature is no longer in vogue in Jiangling
++Lingtai Villagesouththere	south of Lingtai Village, there
++Strange Flowergrowing	Strange Flower growing
+ 第1place	1st Place
+ 第2place	2nd Place
+ 第3place	3rd Place
+--- a/UserData/LongYinEnglish/regex.tsv
++++ b/UserData/LongYinEnglish/regex.tsv
+@@ -96,9 +96,9 @@
+ ^替换天赋:$	Replace Talent:	替换天赋
+ ^天赋:$	Talent:	天赋
+ ^初始不可领悟$	Initially Unlearnable	初始不可领悟
+-^第五重$	Fifth Layer	第五重
+-^第六重$	Sixth Layer	第六重
+-^第七重$	Seventh Layer	第七重
++^第五重$	Layer 5	第五重
++^第六重$	Layer 6	第六重
++^第七重$	Layer 7	第七重
+ ^古本$	Ancient Manuscript	古本
+ ^善本$	Rare Manuscript	善本
+ ^仿本$	Copy	仿本
+@@ -3000,8 +3000,8 @@
+ ^<color=#B40000>消耗银钱 (?<p1>[\\s\\S]+?)</color>$	<color=#B40000>Spend silver coins ${p1}</color>	消耗银钱
+ ^<color=#D2691E>✦(?<p1>[\\s\\S]+?)点潜力=1点上限\\((?<p2>[\\s\\S]+?)/(?<p3>[\\s\\S]+?)\\)</color>$	<color=#D2691E>✦${p1} Tap potential=1 point cap(${p2}/${p1})</color>	点潜力
+ ^<color=#(?<p1>[\\s\\S]+?)><b>\\[(?<p2>[\\s\\S]+?)任务\\]</b></color>$	<color=#${p1}><b>[${p2} Task]</b></color>	任务
+-^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>;StealForceResourceExploreStart;(?<p3>[\\s\\S]+?)$	<color=#${p1}>Chapter ${p2} Layer</color>;StealForceResourceExploreStart;${p3}	第
+-^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>;StealForceSkillExploreStart;(?<p3>[\\s\\S]+?)$	<color=#${p1}>Chapter ${p2} Layer</color>;StealForceSkillExploreStart;${p3}	第
++^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>;StealForceResourceExploreStart;(?<p3>[\\s\\S]+?)$	<color=#${p1}>Layer ${p2}</color>;StealForceResourceExploreStart;${p3}	第
++^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>;StealForceSkillExploreStart;(?<p3>[\\s\\S]+?)$	<color=#${p1}>Layer ${p2}</color>;StealForceSkillExploreStart;${p3}	第
+ ^<color=grey><size=17>(?<p1>[\\s\\S]+?) (?<p2>[\\s\\S]+?)级</size></color>$	<color=grey><size=17>${p1} ${p2} Level</size></color>	级
+ ^<color=grey>本年功绩 (?<p1>[\\s\\S]+?)</color>$	<color=grey>Achievements of the Year ${p1}</color>	本年功绩
+ ^<color=grey>本月功绩 (?<p1>[\\s\\S]+?)</color>$	<color=grey>This Month's Achievements ${p1}</color>	本月功绩
+@@ -3040,7 +3040,7 @@
+ ^\\[被足履淬毒(?<p1>[\\s\\S]+?)\\]$	[Stomped on and poisoned ${p1}]	被足履淬毒
+ ^\\[饰品淬毒(?<p1>[\\s\\S]+?)\\]$	[Poisoned Jewelry ${p1}]	饰品淬毒
+ ^(?<p1>[\\s\\S]+?)\\((?<p2>[\\s\\S]+?)级\\)提升(?<p3>[\\s\\S]+?)级$	${p1}(${p2} Level)Improve ${p3} Level	提升
+-^(?<p1>[\\s\\S]+?)\\(已习得 第(?<p2>[\\s\\S]+?)重\\)</color>$	${p1}(Already learned Chapter ${p2} Repeat)</color>	已习得
++^(?<p1>[\\s\\S]+?)\\(已习得 第(?<p2>[\\s\\S]+?)重\\)</color>$	${p1}(Already learned at Layer ${p2})</color>	已习得
+ ^(?<p1>[\\s\\S]+?)<b>(?<p2>[\\s\\S]+?)</b>(?<p3>[\\s\\S]+?)，买卖价格(?<p4>[\\s\\S]+?)。$	${p1}<b>${p2}</b>${p3}, Buy-sell price ${p4}。	买卖价格
+ ^(?<p1>[\\s\\S]+?)<b>作恶导致禁用(?<p2>[\\s\\S]+?)个月</b></color>$	${p1}<b> Evil causes ban ${p2} Months</b></color>	作恶导致禁用
+ ^(?<p1>[\\s\\S]+?)\n使用次数 (?<p2>[\\s\\S]+?)(?<p3>[\\s\\S]+?)$	${p1}\nFrequency of use ${p2}${p3}	使用次数
+@@ -3288,7 +3288,7 @@
+ ^(?<p1>[\\s\\S]+?)禁用(?<p2>[\\s\\S]+?)个月</color>$	${p1} Disable ${p2} Months</color>	禁用
+ ^(?<p1>[\\s\\S]+?)离开了你的队伍$	${p1} Left your team	离开了你的队伍
+ ^(?<p1>[\\s\\S]+?)离开了由(?<p2>[\\s\\S]+?)领导的队伍。$	${p1} Left the area surrounded by ${p2} Leader's team	领导的队伍
+-^(?<p1>[\\s\\S]+?)突破至第(?<p2>[\\s\\S]+?)重！$	${p1} Break through to the next level of ${p2} Heavily!	突破至第
++^(?<p1>[\\s\\S]+?)突破至第(?<p2>[\\s\\S]+?)重！$	${p1} advanced to Layer ${p2}!	突破至第
+ ^(?<p1>[\\s\\S]+?)等级(?<p2>[\\s\\S]+?)$	${p1} Level ${p2}	等级
+ ^(?<p1>[\\s\\S]+?)类珍宝\n买卖价格减半$	${p1} Class treasure\nCut the buying and selling prices in half	买卖价格减半
+ ^(?<p1>[\\s\\S]+?)类珍宝\n买卖价格翻倍$	${p1} Class treasure\nThe buying and selling prices have doubled	买卖价格翻倍
+@@ -3384,7 +3384,7 @@
+ ^《(?<p1>[\\s\\S]+?)》新的(?<p2>[\\s\\S]+?)阅读最高纪录：(?<p3>[\\s\\S]+?)点$	《${p1}》New ${p2} Read highest record：${p3} Click	阅读最高纪录
+ ^一听说(?<p1>[\\s\\S]+?)要和(?<p2>[\\s\\S]+?)在此举办婚礼，我就马不停蹄赶来了！\n还特意备了这(?<p3>[\\s\\S]+?)聊表心意，不必客气！$	As soon as I heard that ${p1} was going to and ${p2} I hurried here nonstop to attend this wedding!\nHe specially prepared this ${p3} to show his intentions, so there's no need to be so polite!	我就马不停蹄赶来了
+ ^一年一度的门派大比已经召开，不知(?<p1>[\\s\\S]+?)近来武功可有进步？还望你在会上一展身手，切莫错过。$	The annual Sect Grand Competition has already begun. I wonder if ${p1} has made any progress in your martial arts lately? I hope you will showcase your skills at the meeting and don't miss this opportunity.	一年一度的门派大比已经召开
+-^一番血战，终于闯过了第(?<p1>[\\s\\S]+?)层鬼门关试炼。\n经此一役，我的心魂体魄亦是大有精进。$	After the fiercest battle, we finally managed to clear the first round.${p1} Trial of the Layered Devil Gate\nAfter this battle, my heart and body have greatly improved.	我的心魂体魄亦是大有精进
++^一番血战，终于闯过了第(?<p1>[\\s\\S]+?)层鬼门关试炼。\n经此一役，我的心魂体魄亦是大有精进。$	After a fierce battle, I finally cleared Layer ${p1} of the Ghost Gate Trial.\nThrough this battle, my mind and body improved greatly.	我的心魂体魄亦是大有精进
+ ^一直以来，颇受(?<p1>[\\s\\S]+?)照顾。\n我还有件薄礼，值此七夕佳节赠与(?<p2>[\\s\\S]+?)，还望不要推辞。$	I have always been well taken care of by ${p1}.\nI also have a light gift for you, ${p1}. It's for the Seventh-Five Festival, so I hope you won't refuse it.	值此七夕佳节赠与
+ ^一言为定;SureHireHeroJoinTeam;;0/(?<p1>[\\s\\S]+?)$	A word is as good as a vow.;SureHireHeroJoinTeam;;0/${p1}	一言为定
+ ^下一等级 (?<p1>[\\s\\S]+?)\n消耗资源 (?<p2>[\\s\\S]+?)\n研究时间 (?<p3>[\\s\\S]+?)日$	Next level ${p1}\nConsume resources ${p2}\nResearch time ${p3} Day	下一等级
+@@ -3669,7 +3669,7 @@
+ ^哎，江湖凶险，世事无常。\n(?<p1>[\\s\\S]+?)今日能够金盆洗手，全身而退，也不失为一桩喜事。\n我今日前来，便是特意为你践行来的！$	Alas, the Jianghu is perilous, and the world is ever-changing.\n${p1} can today wash his hands in a Golden Basin and retreat unharmed, making it also a cause for joy.\nI have come today especially to see you off!	便是特意为你践行来的
+ ^哎，看来江湖中所谓(?<p1>[\\s\\S]+?)武艺高强，不过是徒有虚名罢了。$	Ah, it seems that ${p1}'s martial skills, so renowned in the Jianghu, are merely a hollow reputation.	不过是徒有虚名罢了
+ ^哎，还不是因为我们几个配合不佳，处处勾心斗角，\n结果反倒让(?<p1>[\\s\\S]+?)赚了便宜。$	Ah, it's just because our group doesn't cooperate well, always trying to outmaneuver each other.\nAs a result, ${p1} ended up benefiting	还不是因为我们几个配合不佳
+-^哎，这第(?<p1>[\\s\\S]+?)层鬼门关试炼当真凶险万分。\n以我如今之武艺尚且力有未逮，需得再精进一番才行。$	Oh, this fifth ${p1} The trials at the Layered Demon Gate Passage are truly extremely perilous.\nWith my current martial arts skills still falling short, I need to improve them further.	以我如今之武艺尚且力有未逮
++^哎，这第(?<p1>[\\s\\S]+?)层鬼门关试炼当真凶险万分。\n以我如今之武艺尚且力有未逮，需得再精进一番才行。$	This Layer ${p1} Ghost Gate Trial is extremely dangerous.\nMy current Martial Arts are still insufficient; I need to improve further.	以我如今之武艺尚且力有未逮
+ ^哟，(?<p1>[\\s\\S]+?)叫得这么亲切，怕不是急着想讨红包了吧？$	Oh, ${p1}, calling so affectionately-aren't you eager to get a red envelope?	怕不是急着想讨红包了吧
+ ^哦吼？年纪不大，口气不小，那我倒来考上你一考，\n就比方说这(?<p1>[\\s\\S]+?)之道，你可知一二啊！$	Oh wow? You don't look like you've been around much, but I'll give you a taste of my skills, then.\nFor example, this ${p1} Do you know anything about the Way!	那我倒来考上你一考
+ ^哦哦哦！感觉全身焕然一新，又充满力量了！\n(?<p1>[\\s\\S]+?)妙手回春，药到病除，实在令人拜服！$	Oh oh oh! I feel rejuvenated, full of energy again!\n${p1} is truly a master of healing, curing ailments with miraculous speed; it's truly impressive!	感觉全身焕然一新
+@@ -3767,7 +3767,7 @@
+ ^在疗伤室中，只需消耗门派药材便可治疗自身伤势。\n（当前伤势：外伤(?<p1>[\\s\\S]+?)/内伤(?<p2>[\\s\\S]+?)/中毒(?<p3>[\\s\\S]+?)）$	In the healing room, one can treat their own injuries by consuming Sect herbs.\n(Current injuries：External Injury ${p1}/Internal Injury ${p2}/Poisoned ${p3}）	只需消耗门派药材便可治疗自身伤势
+ ^在这石窟之中与世隔绝，酣然入梦，足以明心见性，忘却前尘旧事。\n少侠只需耗费(?<p1>[\\s\\S]+?)银两在此闭关三十日，便可遗忘一个天赋。$	Secluded in this cave, asleep and undisturbed, one can purify the mind and forget past deeds.\nYoung Hero needs to expend ${p1} Close the gate for thirty days with silver, and you may forget one talent.	在这石窟之中与世隔绝
+ ^在这石窟之中与世隔绝，酣然入梦，足以明心见性，忘却前尘旧事。\n少侠只需耗费(?<p1>[\\s\\S]+?)银两在此闭关十日，便可遗忘一门<b>零重修为</b>的武学。$	Secluded in this cave, asleep and undisturbed, one can purify the mind and forget past deeds.\nYoung Hero needs to expend ${p1} With ten days of seclusion, you may forget one art.<b>Rebirth at Zero Weight </b>His martial arts	在这石窟之中与世隔绝
+-^在鬼门关孤身挑战强敌，于绝境之中磨炼心性与体魄，\n如此方能探求(?<p1>[\\s\\S]+?)修罗武道之神髓。\n当前鬼门关试炼为第(?<p2>[\\s\\S]+?)层，要进行挑战吗？$	Surviving challenges at the gates of death alone, refining one's will and body in desperate situations,\nThis is the only way to delve into the essence of ${p1}'s Deviled Martial Way.\nCurrent trial of the Ghost Gate is the current trial of the Ghost Gate.${p2} Are you ready to challenge this layer?	于绝境之中磨炼心性与体魄
++^在鬼门关孤身挑战强敌，于绝境之中磨炼心性与体魄，\n如此方能探求(?<p1>[\\s\\S]+?)修罗武道之神髓。\n当前鬼门关试炼为第(?<p2>[\\s\\S]+?)层，要进行挑战吗？$	Challenge powerful enemies alone at the Ghost Gate and temper your mind and body in desperate circumstances.\nOnly then can you grasp the essence of ${p1}'s Asura Martial Way.\nThe current Ghost Gate Trial is Layer ${p2}. Begin the challenge?	于绝境之中磨炼心性与体魄
+ ^均价出售\\((?<p1>[\\s\\S]+?)两\\);GiveNpcBountyItemPriceSure;2$	Sell at average price(${p1} Two);GiveNpcBountyItemPriceSure;2	均价出售
+ ^坐镇指挥;CommandAttackResourcePointForce;(?<p1>[\\s\\S]+?);;;(?<p2>[\\s\\S]+?)$	Command from the rear;CommandAttackResourcePointForce;${p1};;;${p2}	坐镇指挥
+ ^增进与(?<p1>[\\s\\S]+?)的好感(?<p2>[\\s\\S]+?)点$	Increase interaction with ${p1} Goodwill ${p2} Click	增进与
+@@ -4096,8 +4096,8 @@
+ ^本座与(?<p1>[\\s\\S]+?)你交情尚浅，恐怕还不能将本门(?<p2>[\\s\\S]+?)服饰贸然托付于你。\n\\(需要至少(?<p3>[\\s\\S]+?)点掌门好感\\)$	I have not known you long, ${p1}, so I am afraid I cannot share the secrets of our sect yet.${p2} Your attire has been entrusted to you by chance.\n(Need at least ${p3} Palm Master Favor Point)	恐怕还不能将本门
+ ^本座与(?<p1>[\\s\\S]+?)你交情尚浅，恐怕还不能将本门(?<p2>[\\s\\S]+?)武学贸然托付于你。\n\\(需要至少(?<p3>[\\s\\S]+?)点掌门好感。\\)$	I have not known you long, ${p1}, so I am afraid I cannot share the secrets of our sect yet.${p2} Martial arts are rashly entrusted to you\n(Need at least ${p3} Increase the Sect Leader's favor)	恐怕还不能将本门
+ ^本座与(?<p1>[\\s\\S]+?)你交情尚浅，恐怕还不能将本门特殊建筑贸然托付于你。\n\\(需要至少(?<p2>[\\s\\S]+?)点掌门好感\\)$	I haven't known you long enough, ${p1}, so I can't entrust our special structures to you rashly.\n(Need at least ${p2} Palm Master Favor Point)	恐怕还不能将本门特殊建筑贸然托付于你
+-^本战功绩第(?<p1>[\\s\\S]+?)名乃是(?<p2>[\\s\\S]+?)，\n(?<p3>[\\s\\S]+?)$	Battle Record Chapter TheyVien ${p1} Name is ${p2}，\n${p3}	本战功绩第
+-^本战功绩第(?<p1>[\\s\\S]+?)名乃是我自己啊，\n本人身为掌门，得此战功也是理所当然，就不自吹自擂了。$	Battle Record Chapter TheyVien ${p1} Name is mine own self,\nAs the Sect Leader, such battle merits are only fitting, so I won't boast about them.	得此战功也是理所当然
++^本战功绩第(?<p1>[\\s\\S]+?)名乃是(?<p2>[\\s\\S]+?)，\n(?<p3>[\\s\\S]+?)$	Rank ${p1} in battle merit goes to ${p2}.\n${p3}	本战功绩第
++^本战功绩第(?<p1>[\\s\\S]+?)名乃是我自己啊，\n本人身为掌门，得此战功也是理所当然，就不自吹自擂了。$	I ranked ${p1} in battle merit.\nAs the Sect Leader, earning this merit is only natural, so I will not boast about it.	得此战功也是理所当然
+ ^本月(?<p1>[\\s\\S]+?)将在门派祠堂中举办一场宴会，若(?<p2>[\\s\\S]+?)得空，不妨前来与师兄弟们一聚。$	This month, ${p1} will host a banquet in the sect hall. If ${p2} has the time, you might want to come and join the senior brothers and juniors.	将在门派祠堂中举办一场宴会
+ ^本月(?<p1>[\\s\\S]+?)已经征收过资源了，本门还需再慢慢积累一番。$	${p1} has already collected resources this month. The sect needs to accumulate further.	本门还需再慢慢积累一番
+ ^本月(?<p1>[\\s\\S]+?)已经招募过我(?<p2>[\\s\\S]+?)弟子了。\n为避免其余弟子不满，还请(?<p3>[\\s\\S]+?)改日再来吧。$	This ${p1} has already recruited me as a ${p2} disciple this month.\nTo avoid the other disciples becoming discontent, may ${p3} come another day instead.	为避免其余弟子不满
+@@ -4278,15 +4278,15 @@
+ ^竟敢伤我(?<p1>[\\s\\S]+?)！$	Dared to hurt me ${p1}！	竟敢伤我
+ ^竟敢拉帮结伙来此放肆！\n还好我听到吵嚷之声，今天叫你们尝尝(?<p1>[\\s\\S]+?)的手段！$	Dare to gang up and cause trouble here!\nFortunately, I heard the commotion and called you all here today to taste it.${p1} As a means!	竟敢拉帮结伙来此放肆
+ ^竟然连(?<p1>[\\s\\S]+?)也\\.\\.\\.$	Surprisingly even ${p1} Also...	竟然连
+-^第(?<p1>[\\s\\S]+?)件$	Chapter ${p1} Item	第
+-^第(?<p1>[\\s\\S]+?)件拍品是\\.\\.\\.\\.\\.\\.(?<p2>[\\s\\S]+?)！\n此乃一件(?<p3>[\\s\\S]+?)(?<p4>[\\s\\S]+?)，起拍价(?<p5>[\\s\\S]+?)两。\n请各位做好准备，进入唱价环节！$	Chapter ${p1} This item is...${p2}！\nThis is a ${p3}${p4}, Starting bid ${p5} Two\nPlease prepare for the bidding process!	请各位做好准备
+-^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！\n奖励是银钱(?<p3>[\\s\\S]+?)两和这(?<p4>[\\s\\S]+?)，贵派威望也会因此提升(?<p5>[\\s\\S]+?)点。\n此外，每位参战弟子皆会获得(?<p6>[\\s\\S]+?)门派功绩以示鼓励。$	Chapter ${p1} Name is ${p2}！\nReward is in cash ${p3} Two and this ${p4}, Your faction's prestige will also increase as a result.${p5} Dot\nAdditionally, each participating disciple will receive ${p6} Sect achievements are shown to encourage members	贵派威望也会因此提升
+-^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！奖励是银钱(?<p3>[\\s\\S]+?)两。$	Chapter ${p1} Name is ${p2}!The reward is money.${p3} Two	奖励是银钱
+-^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！奖励是银钱(?<p3>[\\s\\S]+?)两以及这(?<p4>[\\s\\S]+?)。$	Chapter ${p1} Name is ${p2}!The reward is money.${p3} Liang and this ${p4}。	奖励是银钱
+-^第(?<p1>[\\s\\S]+?)章$	Chapter ${p1} Chapter	第
+-^第(?<p1>[\\s\\S]+?)章 (?<p2>[\\s\\S]+?)\n(?<p3>[\\s\\S]+?)$	Chapter ${p1} Chapter ${p2}\n${p3}	第
+-^第(?<p1>[\\s\\S]+?)轮$	Chapter ${p1} Wheel	第
+-^第(?<p1>[\\s\\S]+?)重$	Chapter ${p1} Repeat	第
++^第(?<p1>[\\s\\S]+?)件$	Item ${p1}	第
++^第(?<p1>[\\s\\S]+?)件拍品是\\.\\.\\.\\.\\.\\.(?<p2>[\\s\\S]+?)！\n此乃一件(?<p3>[\\s\\S]+?)(?<p4>[\\s\\S]+?)，起拍价(?<p5>[\\s\\S]+?)两。\n请各位做好准备，进入唱价环节！$	Auction item ${p1} is... ${p2}!\nThis is a ${p3}${p4}, with a starting bid of ${p5} taels.\nPlease prepare for the bidding!	请各位做好准备
++^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！\n奖励是银钱(?<p3>[\\s\\S]+?)两和这(?<p4>[\\s\\S]+?)，贵派威望也会因此提升(?<p5>[\\s\\S]+?)点。\n此外，每位参战弟子皆会获得(?<p6>[\\s\\S]+?)门派功绩以示鼓励。$	Rank ${p1}: ${p2}!\nThe reward is ${p3} taels and ${p4}. Your Sect Prestige also increases by ${p5}.\nAdditionally, every participating disciple receives ${p6} Sect Merit.	贵派威望也会因此提升
++^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！奖励是银钱(?<p3>[\\s\\S]+?)两。$	Rank ${p1}: ${p2}! The reward is ${p3} taels.	奖励是银钱
++^第(?<p1>[\\s\\S]+?)名是(?<p2>[\\s\\S]+?)！奖励是银钱(?<p3>[\\s\\S]+?)两以及这(?<p4>[\\s\\S]+?)。$	Rank ${p1}: ${p2}! The reward is ${p3} taels and ${p4}.	奖励是银钱
++^第(?<p1>[\\s\\S]+?)章$	Chapter ${p1}	第
++^第(?<p1>[\\s\\S]+?)章 (?<p2>[\\s\\S]+?)\n(?<p3>[\\s\\S]+?)$	Chapter ${p1}: ${p2}\n${p3}	第
++^第(?<p1>[\\s\\S]+?)轮$	Round ${p1}	第
++^第(?<p1>[\\s\\S]+?)重$	Layer ${p1}	第
+ ^等级(?<p1>[\\s\\S]+?)$	Level ${p1}	等级
+ ^等级加成\n(?<p1>[\\s\\S]+?)威力\\+(?<p2>[\\s\\S]+?)%$	Level bonus\n${p1} Power+${p2}%	等级加成
+ ^等级加成\n(?<p1>[\\s\\S]+?)武学威力\\+(?<p2>[\\s\\S]+?)%$	Level bonus\n${p1} Martial arts power+${p2}%	等级加成
+@@ -5157,7 +5157,7 @@
+ ^药王掌门又要来仙霞派拜访，可几次三番也不过徒劳而已。(?<p1>[\\s\\S]+?)与我一道劝她放弃如何？$	The Sect Leader of the Medicine King is planning to visit the Xianxia Sect again, but all her efforts have been in vain so far. Why don't ${p1} and I persuade her to give up?	药王掌门又要来仙霞派拜访
+ ^大事不好！朝廷突然下令让我们捉拿赵破虏掌门！\\\\n还望(?<p1>[\\s\\S]+?)尽快赶来<b>京城</b>，劝大家莫要轻举妄动，错怪好人！$	Big trouble! The court suddenly ordered us to capture Zhao Polu, the Sect Leader!\\nI hope ${p1} can come as soon as possible.<b>Capital</b>, Advise everyone not to act rashly and wrongfully blame the good!	朝廷突然下令让我们捉拿赵破虏掌门
+ ^(?<p1>[\\s\\S]+?)，大事不妙！白云天姑娘状况恶化，眼看性命就要不保！\\\\n我已飞鸽传书峨眉司马掌门，还望你尽快赶来<b>五毒教</b>，与我们一同商议对策$	${p1}, trouble ahead! Miss Bai Yuntian's condition is worsening; she may not make it!\\nI have sent a message to Sect Leader Sima of Mount Emei via homing pigeon. I hope you can hurry over.<b>Five Poisons Sect</b>, Join us in devising a strategy	我已飞鸽传书峨眉司马掌门
+-^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>$	<color=#${p1}>Chapter ${p2} Layer</color>	第
++^<color=#(?<p1>[\\s\\S]+?)>第(?<p2>[\\s\\S]+?)层</color>$	<color=#${p1}>Layer ${p2}</color>	第
+ ^学识(?<p1>[\\s\\S]+?)排除$	Scholarship ${p1} Exclude	学识
+ ^(?<p1>[\\s\\S]+?)周边情报$	${p1} Surrounding intelligence	周边情报
+ ^(?<p1>[\\s\\S]+?)宴会\\((?<p2>[\\s\\S]+?)日\\)$	${p1} Banquet(${p2} Day)	宴会
+@@ -5241,6 +5241,18 @@
+ (?<prefix>(?:</color>\s+|will\s+))商入(?=\s)	${prefix}Shang Ru	商入
+ (?<prefix>(?:</color>\s+|will\s+))秋固(?=\s)	${prefix}Qiu Gu	秋固
+ (?<prefix>(?:</color>\s+|will\s+))红盈(?=\s)	${prefix}Hong Ying	红盈
++
++# TEST44 latest-log mixed-output cleanup
++Rumor有一伙山贼流寇躲藏于<b>(?<place>[A-Za-z][A-Za-z ]*?)(?<dir>north|south|east|west)</b>一带，Government Office已派出重兵前去捉拿。	Rumor has it that a band of roaming bandits is hiding ${dir} of ${place}. The authorities have sent a large force to capture them.	有一伙山贼流寇
++(?<sect>[A-Za-z][A-Za-z ]+?)zhangmen\s+(?<who><color=[^>]+>[^<]+</color>)\s*将《(?<skill>[\s\S]+?)》(?<edition>[\s\S]+?)秘籍放入藏经阁，供全派弟子参阅。	${sect} Sect Leader ${who} placed ${edition} edition of ${skill} in the Scripture Pavilion for all disciples to study.	将《
++
++# TEST44 short procedural names: translate only after a rich-text rank or promotion marker
++(?<prefix>(?:</color>\s+|will\s+))班音(?=\s)	${prefix}Ban Yin	班音
++(?<prefix>(?:</color>\s+|will\s+))怀罗(?=\s)	${prefix}Huai Luo	怀罗
++(?<prefix>(?:</color>\s+|will\s+))党早(?=\s)	${prefix}Dang Zao	党早
++(?<prefix>(?:</color>\s+|will\s+))梅雯(?=\s)	${prefix}Mei Wen	梅雯
++(?<prefix>(?:</color>\s+|will\s+))查笛(?=\s)	${prefix}Zha Di	查笛
++(?<prefix>(?:</color>\s+|will\s+))农谨(?=\s)	${prefix}Nong Jin	农谨
+ ^(?<p1><color=[^>]+>[^<]+</color>) 对(?<p2><color=[^>]+>[^<]+</color>) dealt critical damage (?<p3>[0-9]+)(?:点| points?)(?<p4>[\s\S]*)$	${p1} dealt ${p3} critical damage to ${p2}${p4}	dealt critical damage
+ ^(?<p1><color=[^>]+>[^<]+</color>) 对(?<p2><color=[^>]+>[^<]+</color>) dealt (?<p3>[0-9]+)(?:点| points?)(?<p4>[\s\S]*)$	${p1} dealt ${p3} damage to ${p2}${p4}	 dealt 
+ ^(?<p1>[\s\S]*?)Sect Quests?\nRecruit(?<p2>[0-9]+)名(?<p3><color=[^>]+>.+?</color>)(?<p4>[\s\S]*)$	${p1}Sect Quest\nRecruit ${p2} ${p3}${p4}	名
+--- a/UserData/LongYinEnglish/tokens.tsv
++++ b/UserData/LongYinEnglish/tokens.tsv
+@@ -12002,3 +12002,31 @@
+ Confirm that it takes2 daysPractice 	Spend 2 days practicing 
+ Approximately needs 	Estimated time: 
+ Heavenly time	days
++
++# TEST44 latest-log safe reusable mixed-output cleanup
++仙木灵果	Immortal Spirit Fruit
++Brimming气血	replenishing Health
++Recruiting disciples Task 和这2000 taelsFunds	Recruit Disciples quest and these 2,000 taels of funding
++营造壁垒，以防敌袭。	fortify the position to guard against enemy attacks.
++Government Office已派出重兵前去捉拿	the authorities have sent a large force to capture them
++是Junior Brother Jin啊	Ah, Junior Brother Jin,
++Junior Sister Shao你语无伦次，and making no sense	Junior Sister Shao, you're rambling incoherently and making no sense
++我看是Senior Sister Yu你有问题吧	I think you're the one with the problem, Senior Sister Yu
++every November1 day乃Sect Leaders' Assemblywhen it is convened	The Sect Leaders' Assembly is held on November 1 each year
++hereRenovatedefensive fortifications，营造壁垒，以防敌袭。 in BranchRenovate Several days?	How many days should we spend repairing and fortifying the Branch defenses against enemy attacks?
++，并 obtained	, and obtained
++
++# TEST44 procedural NPC names safely observed in generated name slots (3+ CJK characters)
++皇甫新炎	Huangfu Xinyan
++太史哲	Taishi Zhe
++王馨祝	Wang Xinzhu
++宦卿院	Huan Qingyuan
++窦盼芙	Dou Panfu
++扈冶秉	Hu Yebing
++上官达十	Shangguan Dashi
++苏轮侠	Su Lunxia
++屠用广	Tu Yongguang
++狄曳华	Di Yehua
++封辛推	Feng Xintui
++司徒蒙笛	Situ Mengdi
++养蕾夏	Yang Leixia
